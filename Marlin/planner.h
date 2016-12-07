@@ -88,6 +88,7 @@ typedef struct {
 
   int32_t accelerate_until,                 // The index of the step event on which to stop acceleration
           decelerate_after,                 // The index of the step event on which to start decelerating
+          deceleration_rate,                // The acceleration rate used for acceleration calculation
           acceleration_rate;                // The acceleration rate used for acceleration calculation
 
   uint8_t direction_bits;                   // The direction bit set for this block (refers to *_DIRECTION_BIT in config.h)
@@ -114,6 +115,7 @@ typedef struct {
   uint32_t nominal_rate,                    // The nominal step rate for this block in step_events/sec
            initial_rate,                    // The jerk-adjusted step rate at start of block
            final_rate,                      // The minimal rate at exit
+           deceleration_steps_per_s2,       // acceleration steps/sec^2
            acceleration_steps_per_s2;       // acceleration steps/sec^2
 
   #if FAN_COUNT > 0

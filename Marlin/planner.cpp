@@ -183,8 +183,9 @@ void Planner::calculate_trapezoid_for_block(block_t* const block, const float &e
   NOLESS(final_rate, MINIMAL_STEP_RATE);
 
   int32_t accel = block->acceleration_steps_per_s2,
+          decel = block->deceleration_steps_per_s2,
           accelerate_steps = ceil(estimate_acceleration_distance(initial_rate, block->nominal_rate, accel)),
-          decelerate_steps = floor(estimate_acceleration_distance(block->nominal_rate, final_rate, -accel)),
+          decelerate_steps = floor(estimate_acceleration_distance(block->nominal_rate, final_rate, -decel)),
           plateau_steps = block->step_event_count - accelerate_steps - decelerate_steps;
 
   // Is the Plateau of Nominal Rate smaller than nothing? That means no cruising, and we will
@@ -1141,6 +1142,12 @@ void Planner::_buffer_line(const float &a, const float &b, const float &c, const
   block->acceleration_steps_per_s2 = accel;
   block->acceleration = accel / steps_per_mm;
   block->acceleration_rate = (long)(accel * 16777216.0 / ((F_CPU) * 0.125)); // * 8.388608
+
+  uint32_t decel=accel/20;
+  if (block->steps[Z_AXIS])// && !block->steps[E_AXIS+extruder])
+    decel=accel;
+  block->deceleration_steps_per_s2 = decel;
+  block->deceleration_rate = (long)(decel * 16777216.0 / ((F_CPU) * 0.125)); // * 8.388608
 
   // Initial limit on the segment entry velocity
   float vmax_junction;

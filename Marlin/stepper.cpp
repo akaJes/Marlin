@@ -642,7 +642,7 @@ void Stepper::isr() {
   }
   else if (step_events_completed > (uint32_t)current_block->decelerate_after) {
     uint16_t step_rate;
-    MultiU24X32toH16(step_rate, deceleration_time, current_block->acceleration_rate);
+    MultiU24X32toH16(step_rate, deceleration_time, current_block->deceleration_rate);
 
     if (step_rate < acc_step_rate) { // Still decelerating?
       step_rate = acc_step_rate - step_rate;
