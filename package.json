@@ -1,0 +1,20 @@
+{
+  "name": "marlin-config",
+  "version": "1.0.0",
+  "description": "<img align=\"right\" src=\"../../raw/1.1.x/buildroot/share/pixmaps/logo/marlin-250.png\" />",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node start.js || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarlinFirmware/Marlin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarlinFirmware/Marlin/issues"
+  },
+  "homepage": "https://github.com/MarlinFirmware/Marlin#readme"
+}
