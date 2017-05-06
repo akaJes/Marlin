@@ -72,10 +72,10 @@ var setConfig=(target,file)=>a=>{
         var changed={};
         if ( changed.enable = o.disabled != i.disabled )
           o.disabled = i.disabled;
-        if ( i.value || o.value )
+        if ( i.value  != undefined || o.value  != undefined )
           if ( changed.value = (o.value||'').trim() != (i.value||'').trim() )
             o.value = i.value;
-        if ( i.comment || o.comment )
+        if ( i.comment != undefined || o.comment != undefined )
           if ( changed.comment = ( o.comment || '' ).trim() != ( i.comment || '' ).trim() )
             o.value=i.value;
         if ( changed.enable || changed.value || changed.comment ){
@@ -108,24 +108,36 @@ var extendBase=target=>a=>{ //obsolete
           i.value=o.value;
         if (o.comment != undefined)
           i.comment=o.comment;
+        if (o.nubmer != undefined)
+          i.nubmer = o.nubmer
       }
       return i;
     })
   )
 }
+var remapNum=a=>{
+  var objs={};
+  a.forEach(i=>(objs[i.name]=objs[i.name]||[])[i.number||0]=i)
+  return objs;
+}
 var loadConfig=a=>target=>{
 //  var map=remap(a);
-  return a.then((cfg,map)=>(map=remap(cfg),target.map(i=>{
-      if (map[i.name]){
-        var num=i.number&&i.number<map[i.name].length?i.number:0,o=map[i.name][num];
-//        if (num) console.log(i.name)
-        if (o.disabled != undefined)
-          i.disabled=o.disabled;
-        if (o.value != undefined)
-          i.value=o.value;
-        if (o.comment != undefined)
-          i.comment=o.comment;
-        i.changed=true;
+  return a.then((cfg,map)=>(map=remapNum(cfg),target.map(i=>{
+      var o=map[i.name]
+      if (o){
+        var o=o[i.number||0]||o[o.length-1];
+        if (o){
+          var changed={};
+          if (changed.enable = o.disabled != undefined)
+            i.disabled=o.disabled;
+          if (changed.value = o.value != undefined)
+            i.value=o.value;
+          if (changed.comment = o.comment != undefined)
+            i.comment=o.comment;
+          if (o.nubmer != undefined)
+            i.nubmer = o.nubmer
+          i.changed=changed;
+        }
       }
       return i;
     })
@@ -160,6 +172,7 @@ walk('./Marlin/example_configurations').then(function(result){
     var over=base
     .then(setConfig(conf.then(addNumber),file))
     .then(onlyChanged)
+    .then(addNumber)
     .then(stripConf)
     .then(toJson)
     .then(outFile(path.join(p.dir,p.name+'.json')))
@@ -173,7 +186,9 @@ walk('./Marlin/example_configurations').then(function(result){
 .then(ob=>walk('./Marlin/example_configurations')).then(function(result){
   var all=[];
   result=result.filter(a=>/Configuration(_adv)?\.json/.test(a))
-  result.forEach(function(file){
+  result
+//  .splice(0,1)
+  .forEach(function(file){
     var p=path.parse(file);
 //    var base = inFile(baseName).then(mc.h2json);
     var baseName=path.join('./Marlin',p.name+'.h');
@@ -199,7 +214,7 @@ walk('./Marlin/example_configurations').then(function(result){
 //vars
 
 if(0){
-var suff = '_adv';
+var suff = '';//'_adv';
 var baseName='./Marlin/Configuration'+suff+'.h';
 var testName='./Marlin/example_configurations/Cartesio/Configuration'+suff+'.h';
 
@@ -226,6 +241,7 @@ prep
 .then(toJson)
 .then(outFile('base-test.json'))
 
+var base = inFile(baseName).then(mc.h2json);
 
 inFile('base-test.json')
 .then(parseJson)
@@ -235,6 +251,7 @@ inFile('base-test.json')
 .then(array2text)
 .then(outFile('base-test-r.h'))
 
+var base = inFile(baseName).then(mc.h2json);
 base
 .then(addNumber)
 .then(loadConfig(inFile('base-test.json').then(parseJson)))
