@@ -1,0 +1,77 @@
+[
+  {
+    "name": "THERMAL_PROTECTION_PERIOD",
+    "value": "60"
+  },
+  {
+    "name": "THERMAL_PROTECTION_HYSTERESIS",
+    "value": "8"
+  },
+  {
+    "name": "WATCH_TEMP_PERIOD",
+    "value": "30"
+  },
+  {
+    "name": "THERMAL_PROTECTION_BED_PERIOD",
+    "value": "60"
+  },
+  {
+    "name": "THERMAL_PROTECTION_BED_HYSTERESIS",
+    "value": "10"
+  },
+  {
+    "name": "FAN_KICKSTART_TIME",
+    "disabled": false,
+    "value": "500"
+  },
+  {
+    "name": "FAN_MIN_PWM",
+    "disabled": false
+  },
+  {
+    "name": "Z_DUAL_ENDSTOPS_ADJUSTMENT",
+    "comment": "// use M666 command to determine this value"
+  },
+  {
+    "name": "HOMING_BUMP_DIVISOR",
+    "value": "{4, 4, 8}"
+  },
+  {
+    "name": "QUICK_HOME",
+    "disabled": false
+  },
+  {
+    "name": "MENU_ADDAUTOSTART",
+    "disabled": false
+  },
+  {
+    "name": "LCD_PROGRESS_BAR",
+    "disabled": false
+  },
+  {
+    "name": "LONG_FILENAME_HOST_SUPPORT",
+    "disabled": false
+  },
+  {
+    "name": "BABYSTEPPING",
+    "disabled": false
+  },
+  {
+    "name": "LIN_ADVANCE_K",
+    "value": "140",
+    "comment": "// start value for PLA on K8200"
+  },
+  {
+    "name": "BLOCK_BUFFER_SIZE",
+    "number": 1,
+    "value": "32"
+  },
+  {
+    "name": "TX_BUFFER_SIZE",
+    "value": "128"
+  },
+  {
+    "name": "FILAMENT_CHANGE_X_POS",
+    "value": "(X_MAX_POS-3)"
+  }
+]

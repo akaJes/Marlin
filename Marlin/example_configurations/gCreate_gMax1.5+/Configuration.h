@@ -118,12 +118,7 @@
 // The following define selects which electronics board you have.
 // Please choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  //#define MOTHERBOARD BOARD_RAMPS_14_EEF
-  #define MOTHERBOARD BOARD_RAMPS_14_EFB       // gMax users please note:  This is a Roxy modification.   I print on glass and
-                                               // I use Marlin to control the bed's temperature.  So, if you have a single nozzle
-                                               // machine, this will work fine for you.  You just set the
-                                               // #define TEMP_SENSOR_BED 75 to 0 down below so Marlin doesn't mess with the bed
-                                               // temp.
+  #define MOTHERBOARD BOARD_RAMPS_14_EFB
 #endif
 
 // Optional custom name for your RepStrap or other custom machine
@@ -245,10 +240,7 @@
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
 #define TEMP_SENSOR_4 0
-#define TEMP_SENSOR_BED 75   // gMax-1.5+ users please note:   This is a Roxy modification to the printer.   I want
-                             // to print on glass.   And I'm using a 400mm x 400mm silicon heat pad powered through
-                             // a Fortek SSR to do it.   If you are using an unaltered gCreate machine, this needs
-                             // to be set to 0
+#define TEMP_SENSOR_BED 75
 
 // Dummy thermistor constant temperature readings, for use with 998 and 999
 #define DUMMY_THERMISTOR_998_VALUE 25
@@ -310,21 +302,15 @@
   #define K1 0.95 //smoothing factor within the PID
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
-
-  // gMax J-Head
+  // Ultimaker
   #define  DEFAULT_Kp 15.35
   #define  DEFAULT_Ki 0.85
   #define  DEFAULT_Kd 69.45
 
-  // Ultimaker
+  // MakerGear
   //#define  DEFAULT_Kp 22.2
   //#define  DEFAULT_Ki 1.08
   //#define  DEFAULT_Kd 114
-
-  // MakerGear
-  //#define  DEFAULT_Kp 7.0
-  //#define  DEFAULT_Ki 0.1
-  //#define  DEFAULT_Kd 12
 
   // Mendel Parts V9 on 12V
   //#define  DEFAULT_Kp 63.0
@@ -439,7 +425,7 @@
 //#define USE_ZMAX_PLUG
 
 // coarse Endstop Settings
-//#define ENDSTOPPULLUPS // Comment this out (using // at the start of the line) to disable the endstop pullup resistors
+//#define ENDSTOPPULLUPS // Comment this out (using// at the start of the line) to disable the endstop pullup resistors
 
 #if DISABLED(ENDSTOPPULLUPS)
   // fine endstop settings: Individual pullups. will be ignored if ENDSTOPPULLUPS is defined
@@ -515,9 +501,9 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
-#define DEFAULT_ACCELERATION           500    // X, Y, Z and E acceleration for printing moves
-#define DEFAULT_RETRACT_ACCELERATION   400    // E acceleration for retracts
-#define DEFAULT_TRAVEL_ACCELERATION    400    // X, Y, Z acceleration for travel (non printing) moves
+#define DEFAULT_ACCELERATION          500     // X, Y, Z and E acceleration for printing moves
+#define DEFAULT_RETRACT_ACCELERATION  400     // E acceleration for retracts
+#define DEFAULT_TRAVEL_ACCELERATION   400     // X, Y, Z acceleration for travel (non printing) moves
 
 /**
  * Default Jerk (mm/s)
@@ -533,20 +519,49 @@
 #define DEFAULT_EJERK                  4.0
 
 
+//===========================================================================
+//============================= Z Probe Options =============================
+//===========================================================================
+// @section probes
+
+//
+// See http://marlinfw.org/configuration/probes.html
+//
+
 /**
- * ===========================================================================
- * ============================= Z Probe Options =============================
- * ===========================================================================
- * @section probes
+ * Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
  *
+ * Enable this option for a probe connected to the Z Min endstop pin.
+ */
+#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+
+/**
+ * Z_MIN_PROBE_ENDSTOP
  *
- *   Probe Type
- *   Probes are sensors/switches that are activated / deactivated before/after use.
+ * Enable this option for a probe connected to any pin except Z-Min.
+ * (By default Marlin assumes the Z-Max endstop pin.)
+ * To use a custom Z Probe pin, set Z_MIN_PROBE_PIN below.
  *
- *   Allen Key Probes, Servo Probes, Z-Sled Probes, FIX_MOUNTED_PROBE, etc.
- *   You must activate one of these to use Auto Bed Leveling below.
+ *  - The simplest option is to use a free endstop connector.
+ *  - Use 5V for powered (usually inductive) sensors.
  *
- *   Use M851 to set the Z probe vertical offset from the nozzle. Store with M500.
+ *  - RAMPS 1.3/1.4 boards may use the 5V, GND, and Aux4->D32 pin:
+ *    - For simple switches connect...
+ *      - normally-closed switches to GND and D32.
+ *      - normally-open switches to 5V and D32.
+ *
+ * WARNING: Setting the wrong pin may have unexpected and potentially
+ * disastrous consequences. Use with caution and do your homework.
+ *
+ */
+//#define Z_MIN_PROBE_ENDSTOP
+//#define Z_MIN_PROBE_PIN Z_MAX_PIN
+
+/**
+ * Probe Type
+ *
+ * Allen Key Probes, Servo Probes, Z-Sled Probes, FIX_MOUNTED_PROBE, etc.
+ * You must activate one of these to use Auto Bed Leveling below.
  */
 
 /**
@@ -572,8 +587,10 @@
  * The BLTouch probe is a Hall effect sensor that emulates a servo.
  */
 #define BLTOUCH
-#define BLTOUCH_DELAY 500   // (ms) Enable and increase if needed
-#define BLTOUCH_HEATERS_OFF // if defined the printer's heaters are turned off during probe event
+#if ENABLED(BLTOUCH)
+  #define BLTOUCH_DELAY 500     // (ms) Enable and increase if needed
+  #define BLTOUCH_HEATERS_OFF   // if defined the printer's heaters are turned off during probe event
+#endif
 
 // A probe that is deployed and stowed with a solenoid pin (SOL1_PIN)
 //#define SOLENOID_PROBE
@@ -605,9 +622,9 @@
  *      O-- FRONT --+
  *    (0,0)
  */
-#define X_PROBE_OFFSET_FROM_EXTRUDER -17    // X offset: -left  +right  [of the nozzle]
-#define Y_PROBE_OFFSET_FROM_EXTRUDER -10    // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -1.027 // Z offset: -below +above  [the nozzle]
+#define X_PROBE_OFFSET_FROM_EXTRUDER -17 // X offset: -left  +right  [of the nozzle]
+#define Y_PROBE_OFFSET_FROM_EXTRUDER -10 // Y offset: -front +behind [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -1.027// Z offset: -below +above  [the nozzle]
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 7500
@@ -692,7 +709,7 @@
 // Direction of endstops when homing; 1=MAX, -1=MIN
 // :[-1,1]
 #define X_HOME_DIR -1
-#define Y_HOME_DIR  1
+#define Y_HOME_DIR 1
 #define Z_HOME_DIR -1
 
 // @section machine
@@ -701,9 +718,8 @@
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS 420   // These numbers are not accurate for an unaltered gMax 1.5+ printer.  My print bed
-#define Y_MAX_POS 420   // is inset a noticable amount from the edge of the bed.  Combined with the inset,
-                        // the nozzle can reach all cordinates of the mesh.
+#define X_MAX_POS 420
+#define Y_MAX_POS 420
 #define Z_MAX_POS 500
 
 // If enabled, axes won't move below MIN_POS in response to movement commands.
@@ -907,8 +923,8 @@
 #define Z_SAFE_HOMING
 
 #if ENABLED(Z_SAFE_HOMING)
-  #define Z_SAFE_HOMING_X_POINT (((X_MIN_POS + X_MAX_POS) / 2) - 4) // X point for Z homing when homing all axis (G28).
-  #define Z_SAFE_HOMING_Y_POINT (((Y_MIN_POS + Y_MAX_POS) / 2) + 4) // Y point for Z homing when homing all axis (G28).
+  #define Z_SAFE_HOMING_X_POINT (((X_MIN_POS + X_MAX_POS) / 2) - 4)// X point for Z homing when homing all axis (G28).
+  #define Z_SAFE_HOMING_Y_POINT (((Y_MIN_POS + Y_MAX_POS) / 2) + 4)// Y point for Z homing when homing all axis (G28).
 #endif
 
 // Homing speeds (mm/m)
@@ -942,7 +958,7 @@
 // When enabled Marlin will send a busy status message to the host
 // every couple of seconds when it can't accept commands.
 //
-//#define HOST_KEEPALIVE_FEATURE        // Disable this if your host doesn't like keepalive messages
+//#define HOST_KEEPALIVE_FEATURE      // Disable this if your host doesn't like keepalive messages
 #define DEFAULT_KEEPALIVE_INTERVAL 2  // Number of seconds between "busy" messages. Set with M113.
 
 //
@@ -1497,7 +1513,7 @@
 // leaving it undefined or defining as 0 will disable the servo subsystem
 // If unsure, leave commented / disabled
 //
-#define NUM_SERVOS 2 // Servo index starts with 0 for M280 command
+#define NUM_SERVOS 2   // Servo index starts with 0 for M280 command
 
 // Delay (in milliseconds) before the next move will start, to give the servo time to reach its target angle.
 // 300ms is a good value but you can try less delay.

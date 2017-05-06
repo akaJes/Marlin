@@ -1,0 +1,263 @@
+[
+  {
+    "name": "STRING_CONFIG_H_AUTHOR",
+    "value": "\"(K8200, @CONSULitAS)\""
+  },
+  {
+    "name": "MOTHERBOARD",
+    "value": "BOARD_K8200"
+  },
+  {
+    "name": "CUSTOM_MACHINE_NAME",
+    "disabled": false,
+    "value": "\"K8200\""
+  },
+  {
+    "name": "MACHINE_UUID",
+    "value": "\"92f72de1-c211-452e-9f2b-61ef88a4751e\"",
+    "comment": "// K8200 standard config without VM8201 (Display)"
+  },
+  {
+    "name": "MACHINE_UUID",
+    "value": "\"92f72de1-c211-452e-9f2b-61ef88a4751e\"",
+    "comment": "// K8200 standard config without VM8201 (Display)"
+  },
+  {
+    "name": "TEMP_SENSOR_0",
+    "value": "5"
+  },
+  {
+    "name": "TEMP_SENSOR_BED",
+    "value": "5"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 2,
+    "disabled": false,
+    "value": "24.29"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 2,
+    "disabled": false,
+    "value": "1.58"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 2,
+    "disabled": false,
+    "value": "93.51"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 2,
+    "disabled": false,
+    "value": "24.29"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 2,
+    "disabled": false,
+    "value": "1.58"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 2,
+    "disabled": false,
+    "value": "93.51"
+  },
+  {
+    "name": "PIDTEMPBED",
+    "disabled": false
+  },
+  {
+    "name": "DEFAULT_bedKp",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_bedKi",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_bedKd",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_bedKp",
+    "number": 1,
+    "disabled": false,
+    "value": "341.88"
+  },
+  {
+    "name": "DEFAULT_bedKi",
+    "number": 1,
+    "disabled": false,
+    "value": "25.32"
+  },
+  {
+    "name": "DEFAULT_bedKd",
+    "number": 1,
+    "disabled": false,
+    "value": "1153.89"
+  },
+  {
+    "name": "DEFAULT_bedKp",
+    "number": 1,
+    "disabled": false,
+    "value": "341.88"
+  },
+  {
+    "name": "DEFAULT_bedKi",
+    "number": 1,
+    "disabled": false,
+    "value": "25.32"
+  },
+  {
+    "name": "DEFAULT_bedKd",
+    "number": 1,
+    "disabled": false,
+    "value": "1153.89"
+  },
+  {
+    "name": "ENDSTOPPULLUP_XMIN",
+    "disabled": false
+  },
+  {
+    "name": "ENDSTOPPULLUP_YMIN",
+    "disabled": false
+  },
+  {
+    "name": "ENDSTOPPULLUP_ZMIN",
+    "disabled": false
+  },
+  {
+    "name": "DEFAULT_AXIS_STEPS_PER_UNIT",
+    "value": "{ 64.25, 64.25, 2560, 600 }"
+  },
+  {
+    "name": "DEFAULT_MAX_FEEDRATE",
+    "value": "{ 500, 500, 5, 25 }"
+  },
+  {
+    "name": "DEFAULT_MAX_ACCELERATION",
+    "value": "{ 9000, 9000, 100, 10000 }"
+  },
+  {
+    "name": "DEFAULT_ACCELERATION",
+    "value": "1000"
+  },
+  {
+    "name": "DEFAULT_RETRACT_ACCELERATION",
+    "value": "1000"
+  },
+  {
+    "name": "DEFAULT_TRAVEL_ACCELERATION",
+    "value": "1000"
+  },
+  {
+    "name": "INVERT_Y_DIR",
+    "value": "false",
+    "comment": "// K8200: false"
+  },
+  {
+    "name": "INVERT_E0_DIR",
+    "value": "true",
+    "comment": "// K8200: true for geared default extruder!"
+  },
+  {
+    "name": "INVERT_E1_DIR",
+    "value": "true"
+  },
+  {
+    "name": "INVERT_E2_DIR",
+    "value": "true"
+  },
+  {
+    "name": "INVERT_E3_DIR",
+    "value": "true"
+  },
+  {
+    "name": "INVERT_E4_DIR",
+    "value": "true"
+  },
+  {
+    "name": "Z_HOMING_HEIGHT",
+    "disabled": false
+  },
+  {
+    "name": "EEPROM_SETTINGS",
+    "disabled": false,
+    "comment": "// K8200: uses EEPROM by default"
+  },
+  {
+    "name": "PREHEAT_1_TEMP_BED",
+    "value": "50",
+    "comment": "// K8200: PLA / set back to 70 if you have an upgraded heatbed power supply"
+  },
+  {
+    "name": "PREHEAT_2_TEMP_BED",
+    "value": "60",
+    "comment": "// K8200: ABS / set back to 110 if you have an upgraded heatbed power supply"
+  },
+  {
+    "name": "PRINTCOUNTER",
+    "disabled": false
+  },
+  {
+    "name": "DISPLAY_CHARSET_HD44780",
+    "value": "JAPANESE // K8200: for Display VM8201",
+    "comment": "// this is the most common hardware"
+  },
+  {
+    "name": "SDSUPPORT",
+    "disabled": false
+  },
+  {
+    "name": "SD_CHECK_AND_RETRY",
+    "disabled": false
+  },
+  {
+    "name": "ENCODER_PULSES_PER_STEP",
+    "disabled": false,
+    "value": "4",
+    "comment": "// K8200_VM8201: four steps per encoder step"
+  },
+  {
+    "name": "ENCODER_STEPS_PER_MENU_ITEM",
+    "disabled": false,
+    "value": "1",
+    "comment": "// K8200_VM8201: One step per menu item"
+  },
+  {
+    "name": "REVERSE_MENU_DIRECTION",
+    "disabled": false,
+    "comment": "// K8200: for Display VM8201 encoder on right side"
+  },
+  {
+    "name": "INDIVIDUAL_AXIS_HOMING_MENU",
+    "disabled": false
+  },
+  {
+    "name": "ULTIMAKERCONTROLLER",
+    "disabled": false,
+    "comment": "// K8200: for Display VM8201"
+  }
+]

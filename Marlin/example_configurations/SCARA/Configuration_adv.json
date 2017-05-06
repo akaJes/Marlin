@@ -1,0 +1,50 @@
+[
+  {
+    "name": "BED_CHECK_INTERVAL",
+    "value": "3000"
+  },
+  {
+    "name": "EXTRUDER_RUNOUT_SPEED",
+    "value": "180"
+  },
+  {
+    "name": "Z_DUAL_ENDSTOPS_ADJUSTMENT",
+    "comment": "// use M666 command to determine this value"
+  },
+  {
+    "name": "X_HOME_BUMP_MM",
+    "value": "3"
+  },
+  {
+    "name": "Y_HOME_BUMP_MM",
+    "value": "3"
+  },
+  {
+    "name": "Z_HOME_BUMP_MM",
+    "value": "3"
+  },
+  {
+    "name": "DEFAULT_STEPPER_DEACTIVE_TIME",
+    "value": "240"
+  },
+  {
+    "name": "MANUAL_FEEDRATE",
+    "value": "{50*60, 50*60, 10*60, 60}"
+  },
+  {
+    "name": "SLOWDOWN",
+    "disabled": true
+  },
+  {
+    "name": "ADVANCE",
+    "disabled": false
+  },
+  {
+    "name": "D_FILAMENT",
+    "value": "1.75"
+  },
+  {
+    "name": "RETRACT_FEEDRATE",
+    "value": "35"
+  }
+]

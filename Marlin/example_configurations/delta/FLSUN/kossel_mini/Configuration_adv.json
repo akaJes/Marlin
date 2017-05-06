@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Z_DUAL_ENDSTOPS_ADJUSTMENT",
+    "comment": "// use M666 command to determine this value"
+  },
+  {
+    "name": "Z_HOME_BUMP_MM",
+    "value": "5",
+    "comment": "// deltas need the same for all three axis"
+  },
+  {
+    "name": "HOMING_BUMP_DIVISOR",
+    "value": "{10, 10, 10}"
+  },
+  {
+    "name": "DEFAULT_STEPPER_DEACTIVE_TIME",
+    "value": "60"
+  },
+  {
+    "name": "MANUAL_FEEDRATE",
+    "value": "{ MANUAL_FEEDRATE_XYZ, MANUAL_FEEDRATE_XYZ, MANUAL_FEEDRATE_XYZ, 60 }"
+  },
+  {
+    "name": "SLOWDOWN",
+    "disabled": true
+  }
+]

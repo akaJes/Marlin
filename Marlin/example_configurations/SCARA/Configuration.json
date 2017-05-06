@@ -1,0 +1,231 @@
+[
+  {
+    "name": "POWER_SUPPLY",
+    "value": "1"
+  },
+  {
+    "name": "TEMP_SENSOR_BED",
+    "value": "1"
+  },
+  {
+    "name": "TEMP_RESIDENCY_TIME",
+    "value": "3"
+  },
+  {
+    "name": "TEMP_HYSTERESIS",
+    "value": "2"
+  },
+  {
+    "name": "TEMP_BED_RESIDENCY_TIME",
+    "value": "0"
+  },
+  {
+    "name": "PID_FUNCTIONAL_RANGE",
+    "value": "20"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 0,
+    "value": "24.5"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 0,
+    "value": "1.72"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 0,
+    "value": "87.73"
+  },
+  {
+    "name": "PIDTEMPBED",
+    "disabled": false
+  },
+  {
+    "name": "DEFAULT_bedKp",
+    "number": 0,
+    "value": "630.14"
+  },
+  {
+    "name": "DEFAULT_bedKi",
+    "number": 0,
+    "value": "121.71"
+  },
+  {
+    "name": "DEFAULT_bedKd",
+    "number": 0,
+    "value": "815.64"
+  },
+  {
+    "name": "USE_ZMIN_PLUG",
+    "disabled": true
+  },
+  {
+    "name": "USE_ZMAX_PLUG",
+    "disabled": false
+  },
+  {
+    "name": "ENDSTOPPULLUPS",
+    "disabled": true
+  },
+  {
+    "name": "ENDSTOPPULLUP_ZMAX",
+    "disabled": false,
+    "comment": "// open pin, inverted"
+  },
+  {
+    "name": "ENDSTOPPULLUP_XMIN",
+    "disabled": false,
+    "comment": "// open pin, inverted"
+  },
+  {
+    "name": "ENDSTOPPULLUP_YMIN",
+    "disabled": false,
+    "comment": "// open pin, inverted"
+  },
+  {
+    "name": "X_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Y_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Z_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "X_MAX_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Y_MAX_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Z_MAX_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Z_MIN_PROBE_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "DEFAULT_AXIS_STEPS_PER_UNIT",
+    "value": "{ 103.69, 106.65, 200/1.25, 1000 }",
+    "comment": "// default steps per unit for SCARA"
+  },
+  {
+    "name": "DEFAULT_MAX_FEEDRATE",
+    "value": "{ 300, 300, 30, 25 }"
+  },
+  {
+    "name": "DEFAULT_MAX_ACCELERATION",
+    "value": "{ 300, 300, 20, 1000 }"
+  },
+  {
+    "name": "DEFAULT_ACCELERATION",
+    "value": "400"
+  },
+  {
+    "name": "DEFAULT_RETRACT_ACCELERATION",
+    "value": "2000"
+  },
+  {
+    "name": "DEFAULT_TRAVEL_ACCELERATION",
+    "value": "400"
+  },
+  {
+    "name": "DEFAULT_XJERK",
+    "value": "5.0"
+  },
+  {
+    "name": "DEFAULT_YJERK",
+    "value": "5.0"
+  },
+  {
+    "name": "DEFAULT_EJERK",
+    "value": "3.0"
+  },
+  {
+    "name": "X_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "-25"
+  },
+  {
+    "name": "Y_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "-29"
+  },
+  {
+    "name": "Z_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "-12.35"
+  },
+  {
+    "name": "Z_CLEARANCE_DEPLOY_PROBE",
+    "value": "15"
+  },
+  {
+    "name": "INVERT_Y_DIR",
+    "value": "false"
+  },
+  {
+    "name": "INVERT_Z_DIR",
+    "value": "true"
+  },
+  {
+    "name": "X_HOME_DIR",
+    "value": "1"
+  },
+  {
+    "name": "Y_HOME_DIR",
+    "value": "1"
+  },
+  {
+    "name": "Z_MIN_POS",
+    "value": "MANUAL_Z_HOME_POS"
+  },
+  {
+    "name": "Z_MAX_POS",
+    "value": "225"
+  },
+  {
+    "name": "MANUAL_X_HOME_POS",
+    "disabled": false,
+    "value": "-22"
+  },
+  {
+    "name": "MANUAL_Y_HOME_POS",
+    "disabled": false,
+    "value": "-52"
+  },
+  {
+    "name": "MANUAL_Z_HOME_POS",
+    "disabled": false,
+    "value": "0.1"
+  },
+  {
+    "name": "HOMING_FEEDRATE_XY",
+    "value": "(40*60)"
+  },
+  {
+    "name": "HOMING_FEEDRATE_Z",
+    "value": "(10*60)"
+  },
+  {
+    "name": "PREHEAT_1_FAN_SPEED",
+    "value": "255"
+  },
+  {
+    "name": "PREHEAT_2_TEMP_BED",
+    "value": "100"
+  },
+  {
+    "name": "PREHEAT_2_FAN_SPEED",
+    "value": "255"
+  },
+  {
+    "name": "LCD_LANGUAGE",
+    "disabled": true
+  }
+]

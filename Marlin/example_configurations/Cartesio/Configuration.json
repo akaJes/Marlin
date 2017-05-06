@@ -1,0 +1,291 @@
+[
+  {
+    "name": "STRING_CONFIG_H_AUTHOR",
+    "value": "\"(MaukCC, CartesioE)\""
+  },
+  {
+    "name": "SHOW_CUSTOM_BOOTSCREEN",
+    "disabled": false
+  },
+  {
+    "name": "BAUDRATE",
+    "value": "115200"
+  },
+  {
+    "name": "MOTHERBOARD",
+    "disabled": false,
+    "value": "BOARD_CNCONTROLS_12"
+  },
+  {
+    "name": "MOTHERBOARD",
+    "disabled": false,
+    "value": "BOARD_CNCONTROLS_12"
+  },
+  {
+    "name": "CUSTOM_MACHINE_NAME",
+    "disabled": false,
+    "value": "\"CartesioE\""
+  },
+  {
+    "name": "EXTRUDERS",
+    "value": "3"
+  },
+  {
+    "name": "POWER_SUPPLY",
+    "value": "1"
+  },
+  {
+    "name": "TEMP_SENSOR_0",
+    "value": "-1"
+  },
+  {
+    "name": "TEMP_SENSOR_1",
+    "value": "-1"
+  },
+  {
+    "name": "TEMP_SENSOR_2",
+    "value": "1"
+  },
+  {
+    "name": "TEMP_SENSOR_BED",
+    "value": "1"
+  },
+  {
+    "name": "TEMP_RESIDENCY_TIME",
+    "value": "4"
+  },
+  {
+    "name": "TEMP_BED_RESIDENCY_TIME",
+    "value": "1"
+  },
+  {
+    "name": "HEATER_0_MAXTEMP",
+    "value": "415"
+  },
+  {
+    "name": "HEATER_1_MAXTEMP",
+    "value": "415"
+  },
+  {
+    "name": "HEATER_2_MAXTEMP",
+    "value": "415"
+  },
+  {
+    "name": "HEATER_3_MAXTEMP",
+    "value": "415"
+  },
+  {
+    "name": "BED_MAXTEMP",
+    "value": "165"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 0,
+    "value": "18"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 0,
+    "value": "1"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 0,
+    "value": "100"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 1,
+    "value": "50"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 1,
+    "value": "9"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 1,
+    "value": "70"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 2,
+    "value": "18"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 2,
+    "value": "1"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 2,
+    "value": "100"
+  },
+  {
+    "name": "PIDTEMPBED",
+    "disabled": false
+  },
+  {
+    "name": "DEFAULT_bedKp",
+    "number": 0,
+    "value": "390"
+  },
+  {
+    "name": "DEFAULT_bedKi",
+    "number": 0,
+    "value": "70"
+  },
+  {
+    "name": "DEFAULT_bedKd",
+    "number": 0,
+    "value": "546"
+  },
+  {
+    "name": "DEFAULT_bedKp",
+    "number": 1,
+    "value": "303"
+  },
+  {
+    "name": "DEFAULT_bedKi",
+    "number": 1,
+    "value": "42"
+  },
+  {
+    "name": "DEFAULT_bedKd",
+    "number": 1,
+    "value": "539"
+  },
+  {
+    "name": "X_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Y_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Z_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Z_MIN_PROBE_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "DEFAULT_AXIS_STEPS_PER_UNIT",
+    "value": "{ 71.128, 71.128, 640, 152 }"
+  },
+  {
+    "name": "DEFAULT_MAX_FEEDRATE",
+    "value": "{ 200, 200, 20, 20 }"
+  },
+  {
+    "name": "DEFAULT_MAX_ACCELERATION",
+    "value": "{ 1000, 1000, 100, 10000 }"
+  },
+  {
+    "name": "DEFAULT_ACCELERATION",
+    "value": "500"
+  },
+  {
+    "name": "DEFAULT_RETRACT_ACCELERATION",
+    "value": "10000"
+  },
+  {
+    "name": "DEFAULT_TRAVEL_ACCELERATION",
+    "value": "1000"
+  },
+  {
+    "name": "DEFAULT_XJERK",
+    "value": "10.0"
+  },
+  {
+    "name": "DEFAULT_YJERK",
+    "value": "10.0"
+  },
+  {
+    "name": "Z_CLEARANCE_DEPLOY_PROBE",
+    "value": "15"
+  },
+  {
+    "name": "X_ENABLE_ON",
+    "value": "1"
+  },
+  {
+    "name": "Y_ENABLE_ON",
+    "value": "1"
+  },
+  {
+    "name": "Z_ENABLE_ON",
+    "value": "1"
+  },
+  {
+    "name": "X_MAX_POS",
+    "value": "435"
+  },
+  {
+    "name": "Y_MAX_POS",
+    "value": "270"
+  },
+  {
+    "name": "Z_MAX_POS",
+    "value": "400"
+  },
+  {
+    "name": "HOMING_FEEDRATE_Z",
+    "value": "(10*60)"
+  },
+  {
+    "name": "PREHEAT_1_TEMP_HOTEND",
+    "value": "190"
+  },
+  {
+    "name": "PREHEAT_1_TEMP_BED",
+    "value": "50"
+  },
+  {
+    "name": "SDSUPPORT",
+    "disabled": false
+  },
+  {
+    "name": "ENCODER_PULSES_PER_STEP",
+    "disabled": false,
+    "value": "2"
+  },
+  {
+    "name": "ENCODER_STEPS_PER_MENU_ITEM",
+    "disabled": false,
+    "value": "1"
+  },
+  {
+    "name": "SPEAKER",
+    "disabled": false
+  },
+  {
+    "name": "LCD_FEEDBACK_FREQUENCY_DURATION_MS",
+    "disabled": false
+  },
+  {
+    "name": "LCD_FEEDBACK_FREQUENCY_HZ",
+    "disabled": false
+  },
+  {
+    "name": "CARTESIO_UI",
+    "disabled": false
+  },
+  {
+    "name": "REPRAPWORLD_KEYPAD",
+    "disabled": false
+  },
+  {
+    "name": "REPRAPWORLD_KEYPAD_MOVE_STEP",
+    "disabled": false,
+    "value": "10.0"
+  },
+  {
+    "name": "TEMP_STAT_LEDS",
+    "disabled": false
+  }
+]

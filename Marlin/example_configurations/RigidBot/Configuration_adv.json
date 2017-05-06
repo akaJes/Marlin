@@ -1,0 +1,39 @@
+[
+  {
+    "name": "USE_CONTROLLER_FAN",
+    "disabled": false
+  },
+  {
+    "name": "CONTROLLER_FAN_PIN",
+    "disabled": false,
+    "value": "4"
+  },
+  {
+    "name": "Z_DUAL_ENDSTOPS_ADJUSTMENT",
+    "comment": "// use M666 command to determine this value"
+  },
+  {
+    "name": "DEFAULT_STEPPER_DEACTIVE_TIME",
+    "value": "60"
+  },
+  {
+    "name": "ENCODER_RATE_MULTIPLIER",
+    "disabled": true
+  },
+  {
+    "name": "ENCODER_10X_STEPS_PER_SEC",
+    "disabled": true
+  },
+  {
+    "name": "ENCODER_100X_STEPS_PER_SEC",
+    "disabled": true
+  },
+  {
+    "name": "D_FILAMENT",
+    "value": "1.75"
+  },
+  {
+    "name": "BUFSIZE",
+    "value": "8"
+  }
+]

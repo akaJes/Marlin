@@ -1,0 +1,307 @@
+[
+  {
+    "name": "STRING_CONFIG_H_AUTHOR",
+    "value": "\"(StefanB, default config)\""
+  },
+  {
+    "name": "BAUDRATE",
+    "value": "115200"
+  },
+  {
+    "name": "MOTHERBOARD",
+    "value": "BOARD_MELZI"
+  },
+  {
+    "name": "CUSTOM_MACHINE_NAME",
+    "value": "\"TinyBoy2 L16\""
+  },
+  {
+    "name": "CUSTOM_MACHINE_NAME",
+    "value": "\"TinyBoy2 L16\""
+  },
+  {
+    "name": "TEMP_SENSOR_0",
+    "value": "5"
+  },
+  {
+    "name": "TEMP_SENSOR_BED",
+    "value": "0"
+  },
+  {
+    "name": "TEMP_SENSOR_BED",
+    "value": "0"
+  },
+  {
+    "name": "HEATER_0_MAXTEMP",
+    "value": "250"
+  },
+  {
+    "name": "BED_MAXTEMP",
+    "value": "100"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 2,
+    "disabled": false,
+    "value": "26.15"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 2,
+    "disabled": false,
+    "value": "2.71"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 2,
+    "disabled": false,
+    "value": "63.02"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 2,
+    "disabled": false,
+    "value": "26.15"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 2,
+    "disabled": false,
+    "value": "2.71"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 2,
+    "disabled": false,
+    "value": "63.02"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 2,
+    "disabled": false,
+    "value": "26.15"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 2,
+    "disabled": false,
+    "value": "2.71"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 2,
+    "disabled": false,
+    "value": "63.02"
+  },
+  {
+    "name": "PIDTEMPBED",
+    "disabled": false
+  },
+  {
+    "name": "DEFAULT_bedKp",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_bedKi",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_bedKd",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_bedKp",
+    "number": 1,
+    "disabled": false,
+    "value": "267.54"
+  },
+  {
+    "name": "DEFAULT_bedKi",
+    "number": 1,
+    "disabled": false,
+    "value": "52.34"
+  },
+  {
+    "name": "DEFAULT_bedKd",
+    "number": 1,
+    "disabled": false,
+    "value": "341.92"
+  },
+  {
+    "name": "DEFAULT_bedKp",
+    "number": 1,
+    "disabled": false,
+    "value": "267.54"
+  },
+  {
+    "name": "DEFAULT_bedKi",
+    "number": 1,
+    "disabled": false,
+    "value": "52.34"
+  },
+  {
+    "name": "DEFAULT_bedKd",
+    "number": 1,
+    "disabled": false,
+    "value": "341.92"
+  },
+  {
+    "name": "DEFAULT_bedKp",
+    "number": 1,
+    "disabled": false,
+    "value": "267.54"
+  },
+  {
+    "name": "DEFAULT_bedKi",
+    "number": 1,
+    "disabled": false,
+    "value": "52.34"
+  },
+  {
+    "name": "DEFAULT_bedKd",
+    "number": 1,
+    "disabled": false,
+    "value": "341.92"
+  },
+  {
+    "name": "USE_XMIN_PLUG",
+    "disabled": true
+  },
+  {
+    "name": "USE_XMAX_PLUG",
+    "disabled": false
+  },
+  {
+    "name": "Y_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Z_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "X_MAX_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "ENDSTOP_INTERRUPTS_FEATURE",
+    "disabled": false
+  },
+  {
+    "name": "DEFAULT_AXIS_STEPS_PER_UNIT",
+    "value": "{ 100, 100, 6400, 88.16 }"
+  },
+  {
+    "name": "DEFAULT_MAX_FEEDRATE",
+    "value": "{ 300, 300, 7, 35 }"
+  },
+  {
+    "name": "X_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "34"
+  },
+  {
+    "name": "Y_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "15"
+  },
+  {
+    "name": "INVERT_X_DIR",
+    "value": "true"
+  },
+  {
+    "name": "INVERT_Y_DIR",
+    "value": "false"
+  },
+  {
+    "name": "INVERT_E0_DIR",
+    "value": "true"
+  },
+  {
+    "name": "X_HOME_DIR",
+    "value": "1"
+  },
+  {
+    "name": "X_MAX_POS",
+    "value": "98"
+  },
+  {
+    "name": "Y_MAX_POS",
+    "value": "98"
+  },
+  {
+    "name": "Z_MAX_POS",
+    "value": "158"
+  },
+  {
+    "name": "Z_MAX_POS",
+    "value": "158"
+  },
+  {
+    "name": "HOMING_FEEDRATE_XY",
+    "value": "(40*60)"
+  },
+  {
+    "name": "HOMING_FEEDRATE_Z",
+    "value": "(3*60)"
+  },
+  {
+    "name": "EEPROM_SETTINGS",
+    "disabled": false
+  },
+  {
+    "name": "PREHEAT_2_TEMP_BED",
+    "value": "90",
+    "comment": "// TB2: ABS default 110, 90 is the maximum temp at 12V supply"
+  },
+  {
+    "name": "NOZZLE_PARK_FEATURE",
+    "disabled": false
+  },
+  {
+    "name": "PRINTCOUNTER",
+    "disabled": false
+  },
+  {
+    "name": "SDSUPPORT",
+    "disabled": false
+  },
+  {
+    "name": "SD_CHECK_AND_RETRY",
+    "disabled": false
+  },
+  {
+    "name": "ENCODER_PULSES_PER_STEP",
+    "disabled": false,
+    "value": "4"
+  },
+  {
+    "name": "ENCODER_STEPS_PER_MENU_ITEM",
+    "disabled": false,
+    "value": "1"
+  },
+  {
+    "name": "OLED_PANEL_TINYBOY2",
+    "disabled": false
+  },
+  {
+    "name": "DEFAULT_NOMINAL_FILAMENT_DIA",
+    "value": "1.75"
+  }
+]

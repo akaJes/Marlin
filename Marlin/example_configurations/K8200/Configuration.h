@@ -39,22 +39,6 @@
 #define CONFIGURATION_H
 #define CONFIGURATION_H_VERSION 010100
 
-/**
- * Sample configuration file for Vellemann K8200
- * tested on K8200 with VM8201 (Display)
- * and Arduino 1.6.12 (Mac OS X) by @CONSULitAS, 2016-11-18
- * https://github.com/CONSULitAS/Marlin-K8200/archive/K8200_stable_2016-11-18.zip
- *
- * Please choose your hardware options for the K8200:
- */
-
-// VM8201 Display unit
-#define K8200_VM8201
-// K8204 Z axis upgrade rod and coupler -> TODO
-// #define K8200_K8204
-// K8203 direct drive extruder -> TODO
-// #define K8200_K8203
-
 //===========================================================================
 //============================= Getting Started =============================
 //===========================================================================
@@ -74,8 +58,8 @@
 //===========================================================================
 //============================= DELTA Printer ===============================
 //===========================================================================
-// For Delta printers start with one of the configuration files in the
-// example_configurations/delta directory and customize for your machine.
+// For a Delta printer replace the configuration files with the files in the
+// example_configurations/delta directory.
 //
 
 //===========================================================================
@@ -90,7 +74,7 @@
 // User-specified version info of this build to display in [Pronterface, etc] terminal window during
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
-#define STRING_CONFIG_H_AUTHOR "(K8200, @CONSULitAS)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(K8200, @CONSULitAS)"   // Who made the changes.
 #define SHOW_BOOTSCREEN
 #define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
 #define STRING_SPLASH_LINE2 WEBSITE_URL         // will be shown during bootup in line 2
@@ -143,11 +127,7 @@
 
 // Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
 // You can use an online service to generate a random UUID. (eg http://www.uuidgenerator.net/version4)
-#if ENABLED(K8200_VM8201)
-  #define MACHINE_UUID "2b7dea3b-844e-4ab1-aa96-bb6406607d6e" // K8200 standard config with VM8201 (Display)
-#else
-  #define MACHINE_UUID "92f72de1-c211-452e-9f2b-61ef88a4751e" // K8200 standard config without VM8201 (Display)
-#endif
+//#define MACHINE_UUID "92f72de1-c211-452e-9f2b-61ef88a4751e"
 
 // This defines the number of extruders
 // :[1, 2, 3, 4, 5]
@@ -333,14 +313,10 @@
   //#define  DEFAULT_Kd 12
 
   // Mendel Parts V9 on 12V
-  //#define  DEFAULT_Kp 63.0
-  //#define  DEFAULT_Ki 2.25
-  //#define  DEFAULT_Kd 440
-
-  // Vellemann K8200 Extruder - calculated with PID Autotune and tested
   #define  DEFAULT_Kp 24.29
   #define  DEFAULT_Ki 1.58
   #define  DEFAULT_Kd 93.51
+
 #endif // PIDTEMP
 
 //===========================================================================
@@ -377,17 +353,11 @@
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
-  //#define  DEFAULT_bedKp 97.1
-  //#define  DEFAULT_bedKi 1.41
-  //#define  DEFAULT_bedKd 1675.16
+  #define  DEFAULT_bedKp 341.88
+  #define  DEFAULT_bedKi 25.32
+  #define  DEFAULT_bedKd 1153.89
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
-
-    // Vellemann K8200 PCB heatbed with standard PCU at 60 degreesC - calculated with PID Autotune and tested
-    // from pidautotune
-    #define  DEFAULT_bedKp 341.88
-    #define  DEFAULT_bedKi 25.32
-    #define  DEFAULT_bedKd 1153.89
 #endif // PIDTEMPBED
 
 // @section extruder
@@ -507,6 +477,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3]]]
  */
 #define DEFAULT_AXIS_STEPS_PER_UNIT   { 64.25, 64.25, 2560, 600 }
+
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
@@ -546,6 +517,7 @@
 #define DEFAULT_YJERK                 20.0
 #define DEFAULT_ZJERK                  0.4
 #define DEFAULT_EJERK                  5.0
+
 
 //===========================================================================
 //============================= Z Probe Options =============================
@@ -589,7 +561,7 @@
  * Probe Type
  *
  * Allen Key Probes, Servo Probes, Z-Sled Probes, FIX_MOUNTED_PROBE, etc.
- * Activate one of these to use Auto Bed Leveling below.
+ * You must activate one of these to use Auto Bed Leveling below.
  */
 
 /**
@@ -714,7 +686,7 @@
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR false
-#define INVERT_Y_DIR false // K8200: false
+#define INVERT_Y_DIR false
 #define INVERT_Z_DIR false
 
 // Enable this option for Toshiba stepper drivers
@@ -723,16 +695,16 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR true // K8200: true for geared default extruder!
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR true
 #define INVERT_E2_DIR true
 #define INVERT_E3_DIR true
 #define INVERT_E4_DIR true
 
 // @section homing
-// K8200: it is usual to have clamps for the glass plate on the heatbed
-#define Z_HOMING_HEIGHT 4   // (in mm) Minimal z height before homing (G28) for Z clearance above the bed, clamps, ...
-                            // Be sure you have this distance over your Z_MAX_POS in case.
+
+#define Z_HOMING_HEIGHT 4    // (in mm) Minimal z height before homing (G28) for Z clearance above the bed, clamps, ...
+                             // Be sure you have this distance over your Z_MAX_POS in case.
 
 // Direction of endstops when homing; 1=MAX, -1=MIN
 // :[-1,1]
@@ -973,7 +945,7 @@
 // M501 - reads parameters from EEPROM (if you need reset them after you changed them temporarily).
 // M502 - reverts to the default "factory settings".  You still need to store them in EEPROM afterwards if you want to.
 //define this to enable EEPROM support
-#define EEPROM_SETTINGS // K8200: uses EEPROM by default
+#define EEPROM_SETTINGS
 
 #if ENABLED(EEPROM_SETTINGS)
   // To disable EEPROM Serial responses and decrease program space by ~1700 byte: comment this out:
@@ -1008,11 +980,11 @@
 
 // Preheat Constants
 #define PREHEAT_1_TEMP_HOTEND 180
-#define PREHEAT_1_TEMP_BED     50 // K8200: PLA / set back to 70 if you have an upgraded heatbed power supply
+#define PREHEAT_1_TEMP_BED     50
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
 #define PREHEAT_2_TEMP_HOTEND 240
-#define PREHEAT_2_TEMP_BED     60 // K8200: ABS / set back to 110 if you have an upgraded heatbed power supply
+#define PREHEAT_2_TEMP_BED    60
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
 /**
@@ -1132,9 +1104,6 @@
 
 // @section lcd
 
-// K8200: for Display VM8201 with SD slot
-#if ENABLED(K8200_VM8201)
-
 /**
  * LCD LANGUAGE
  *
@@ -1169,7 +1138,7 @@
  *
  * :['JAPANESE', 'WESTERN', 'CYRILLIC']
  */
-#define DISPLAY_CHARSET_HD44780 JAPANESE // K8200: for Display VM8201 // this is the most common hardware
+#define DISPLAY_CHARSET_HD44780 JAPANESE // K8200: for Display VM8201
 
 /**
  * LCD TYPE
@@ -1216,13 +1185,13 @@
 // This option overrides the default number of encoder pulses needed to
 // produce one step. Should be increased for high-resolution encoders.
 //
-#define ENCODER_PULSES_PER_STEP 4 // K8200_VM8201: four steps per encoder step
+#define ENCODER_PULSES_PER_STEP 4
 
 //
 // Use this option to override the number of step signals required to
 // move between next/prev menu items.
 //
-#define ENCODER_STEPS_PER_MENU_ITEM 1 // K8200_VM8201: One step per menu item
+#define ENCODER_STEPS_PER_MENU_ITEM 1
 
 /**
  * Encoder Direction Options
@@ -1247,7 +1216,7 @@
 //  If CLOCKWISE normally moves DOWN this makes it go UP.
 //  If CLOCKWISE normally moves UP this makes it go DOWN.
 //
-#define REVERSE_MENU_DIRECTION // K8200: for Display VM8201 encoder on right side
+#define REVERSE_MENU_DIRECTION
 
 //
 // Individual Axis Homing
@@ -1284,7 +1253,7 @@
 //
 // ULTIMAKER Controller.
 //
-#define ULTIMAKERCONTROLLER // K8200: for Display VM8201
+#define ULTIMAKERCONTROLLER
 
 //
 // ULTIPANEL as seen on Thingiverse.
@@ -1446,8 +1415,6 @@
 // TinyBoy2 128x64 OLED / Encoder Panel
 //
 //#define OLED_PANEL_TINYBOY2
-
-#endif // K8200_VM8201
 
 //=============================================================================
 //=============================== Extra Features ==============================

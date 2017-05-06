@@ -1,0 +1,23 @@
+[
+  {
+    "name": "USE_CONTROLLER_FAN",
+    "disabled": false
+  },
+  {
+    "name": "CONTROLLER_FAN_PIN",
+    "disabled": false,
+    "value": "23"
+  },
+  {
+    "name": "Z_DUAL_ENDSTOPS_ADJUSTMENT",
+    "comment": "// use M666 command to determine this value"
+  },
+  {
+    "name": "Z_HOME_BUMP_MM",
+    "value": "1"
+  },
+  {
+    "name": "DEFAULT_STEPPER_DEACTIVE_TIME",
+    "value": "60"
+  }
+]

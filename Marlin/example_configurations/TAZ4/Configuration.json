@@ -1,0 +1,372 @@
+[
+  {
+    "name": "STRING_CONFIG_H_AUTHOR",
+    "value": "\"(Aleph Objects, Inc, TAZ  config)\""
+  },
+  {
+    "name": "MOTHERBOARD",
+    "value": "BOARD_RAMBO"
+  },
+  {
+    "name": "CUSTOM_MACHINE_NAME",
+    "disabled": false,
+    "value": "\"TAZ\""
+  },
+  {
+    "name": "POWER_SUPPLY",
+    "value": "1"
+  },
+  {
+    "name": "TEMP_SENSOR_0",
+    "value": "7"
+  },
+  {
+    "name": "TEMP_SENSOR_1",
+    "value": "7"
+  },
+  {
+    "name": "TEMP_SENSOR_BED",
+    "value": "7"
+  },
+  {
+    "name": "TEMP_BED_RESIDENCY_TIME",
+    "value": "0"
+  },
+  {
+    "name": "HEATER_0_MAXTEMP",
+    "value": "250"
+  },
+  {
+    "name": "HEATER_1_MAXTEMP",
+    "value": "250"
+  },
+  {
+    "name": "HEATER_2_MAXTEMP",
+    "value": "250"
+  },
+  {
+    "name": "HEATER_3_MAXTEMP",
+    "value": "250"
+  },
+  {
+    "name": "BANG_MAX",
+    "value": "70"
+  },
+  {
+    "name": "PID_MAX",
+    "value": "74"
+  },
+  {
+    "name": "PID_FUNCTIONAL_RANGE",
+    "value": "16"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 0,
+    "value": "6"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 0,
+    "value": ".3"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 0,
+    "value": "125"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 1,
+    "value": "22.2"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 1,
+    "value": "1.01"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 1,
+    "value": "114"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 2,
+    "value": "63.0"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 2,
+    "value": "2.25"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 2,
+    "value": "440"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 2,
+    "value": "63.0"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 2,
+    "value": "2.25"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 2,
+    "value": "440"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 2,
+    "value": "63.0"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 2,
+    "value": "2.25"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 2,
+    "value": "440"
+  },
+  {
+    "name": "PIDTEMPBED",
+    "disabled": false
+  },
+  {
+    "name": "MAX_BED_POWER",
+    "value": "206"
+  },
+  {
+    "name": "DEFAULT_bedKp",
+    "number": 0,
+    "value": "20"
+  },
+  {
+    "name": "DEFAULT_bedKi",
+    "number": 0,
+    "value": "5"
+  },
+  {
+    "name": "DEFAULT_bedKd",
+    "number": 0,
+    "value": "275"
+  },
+  {
+    "name": "DEFAULT_bedKp",
+    "number": 1,
+    "value": "97.1"
+  },
+  {
+    "name": "DEFAULT_bedKi",
+    "number": 1,
+    "value": "1.41"
+  },
+  {
+    "name": "DEFAULT_bedKd",
+    "number": 1,
+    "value": "1675.16"
+  },
+  {
+    "name": "DEFAULT_bedKp",
+    "number": 1,
+    "value": "97.1"
+  },
+  {
+    "name": "DEFAULT_bedKi",
+    "number": 1,
+    "value": "1.41"
+  },
+  {
+    "name": "DEFAULT_bedKd",
+    "number": 1,
+    "value": "1675.16"
+  },
+  {
+    "name": "DEFAULT_bedKp",
+    "number": 1,
+    "value": "97.1"
+  },
+  {
+    "name": "DEFAULT_bedKi",
+    "number": 1,
+    "value": "1.41"
+  },
+  {
+    "name": "DEFAULT_bedKd",
+    "number": 1,
+    "value": "1675.16"
+  },
+  {
+    "name": "ENDSTOPPULLUP_XMAX",
+    "disabled": false
+  },
+  {
+    "name": "ENDSTOPPULLUP_YMAX",
+    "disabled": false
+  },
+  {
+    "name": "ENDSTOPPULLUP_ZMAX",
+    "disabled": false
+  },
+  {
+    "name": "ENDSTOPPULLUP_XMIN",
+    "disabled": false
+  },
+  {
+    "name": "ENDSTOPPULLUP_YMIN",
+    "disabled": false
+  },
+  {
+    "name": "ENDSTOPPULLUP_ZMIN",
+    "disabled": false
+  },
+  {
+    "name": "ENDSTOPPULLUP_ZMIN_PROBE",
+    "disabled": false
+  },
+  {
+    "name": "X_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Y_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Z_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "X_MAX_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Y_MAX_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Z_MAX_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Z_MIN_PROBE_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "DEFAULT_AXIS_STEPS_PER_UNIT",
+    "value": "{ 100.5, 100.5, 400, 850 }"
+  },
+  {
+    "name": "DEFAULT_MAX_FEEDRATE",
+    "value": "{ 800, 800, 8, 50 }"
+  },
+  {
+    "name": "DEFAULT_MAX_ACCELERATION",
+    "value": "{ 9000, 9000, 100, 10000 }"
+  },
+  {
+    "name": "DEFAULT_ACCELERATION",
+    "value": "500"
+  },
+  {
+    "name": "DEFAULT_XJERK",
+    "value": "8.0"
+  },
+  {
+    "name": "DEFAULT_YJERK",
+    "value": "8.0"
+  },
+  {
+    "name": "DEFAULT_EJERK",
+    "value": "10.0"
+  },
+  {
+    "name": "FIX_MOUNTED_PROBE",
+    "disabled": false
+  },
+  {
+    "name": "X_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "-25"
+  },
+  {
+    "name": "Y_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "-29"
+  },
+  {
+    "name": "Z_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "-12.35"
+  },
+  {
+    "name": "Z_CLEARANCE_DEPLOY_PROBE",
+    "value": "15"
+  },
+  {
+    "name": "INVERT_E0_DIR",
+    "value": "true"
+  },
+  {
+    "name": "INVERT_E1_DIR",
+    "value": "true"
+  },
+  {
+    "name": "INVERT_E2_DIR",
+    "value": "true"
+  },
+  {
+    "name": "INVERT_E3_DIR",
+    "value": "true"
+  },
+  {
+    "name": "INVERT_E4_DIR",
+    "value": "true"
+  },
+  {
+    "name": "X_MAX_POS",
+    "value": "298"
+  },
+  {
+    "name": "Y_MAX_POS",
+    "value": "275"
+  },
+  {
+    "name": "Z_MAX_POS",
+    "value": "250"
+  },
+  {
+    "name": "HOMING_FEEDRATE_Z",
+    "value": "(8*60)"
+  },
+  {
+    "name": "EEPROM_SETTINGS",
+    "disabled": false
+  },
+  {
+    "name": "PREHEAT_2_TEMP_HOTEND",
+    "value": "230"
+  },
+  {
+    "name": "ENCODER_PULSES_PER_STEP",
+    "disabled": false,
+    "value": "2"
+  },
+  {
+    "name": "ENCODER_STEPS_PER_MENU_ITEM",
+    "disabled": false,
+    "value": "1"
+  },
+  {
+    "name": "REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER",
+    "disabled": false
+  },
+  {
+    "name": "FAST_PWM_FAN",
+    "disabled": false
+  }
+]

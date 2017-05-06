@@ -1,0 +1,397 @@
+[
+  {
+    "name": "STRING_CONFIG_H_AUTHOR",
+    "value": "\"(LVD, FLSUN-AC)\""
+  },
+  {
+    "name": "MOTHERBOARD",
+    "value": "BOARD_RAMPS_13_EFB"
+  },
+  {
+    "name": "CUSTOM_MACHINE_NAME",
+    "disabled": false,
+    "value": "\"FLSUN Kossel\""
+  },
+  {
+    "name": "TEMP_SENSOR_0",
+    "value": "5"
+  },
+  {
+    "name": "TEMP_SENSOR_BED",
+    "value": "5"
+  },
+  {
+    "name": "MAX_REDUNDANT_TEMP_SENSOR_DIFF",
+    "value": "5"
+  },
+  {
+    "name": "TEMP_BED_RESIDENCY_TIME",
+    "value": "1"
+  },
+  {
+    "name": "HEATER_0_MAXTEMP",
+    "value": "250"
+  },
+  {
+    "name": "HEATER_1_MAXTEMP",
+    "value": "250"
+  },
+  {
+    "name": "HEATER_2_MAXTEMP",
+    "value": "250"
+  },
+  {
+    "name": "HEATER_3_MAXTEMP",
+    "value": "250"
+  },
+  {
+    "name": "HEATER_4_MAXTEMP",
+    "value": "250"
+  },
+  {
+    "name": "BED_MAXTEMP",
+    "value": "115"
+  },
+  {
+    "name": "PID_AUTOTUNE_MENU",
+    "disabled": false
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 2,
+    "disabled": false,
+    "value": "24.77"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 2,
+    "disabled": false,
+    "value": "1.84"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 2,
+    "disabled": false,
+    "value": "83.61"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 2,
+    "disabled": false,
+    "value": "24.77"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 2,
+    "disabled": false,
+    "value": "1.84"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 2,
+    "disabled": false,
+    "value": "83.61"
+  },
+  {
+    "name": "DEFAULT_bedKp",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_bedKi",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_bedKd",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_bedKp",
+    "number": 1,
+    "disabled": false,
+    "value": "22.97"
+  },
+  {
+    "name": "DEFAULT_bedKi",
+    "number": 1,
+    "disabled": false,
+    "value": "3.76"
+  },
+  {
+    "name": "DEFAULT_bedKd",
+    "number": 1,
+    "disabled": false,
+    "value": "29.2"
+  },
+  {
+    "name": "DEFAULT_bedKp",
+    "number": 1,
+    "disabled": false,
+    "value": "22.97"
+  },
+  {
+    "name": "DEFAULT_bedKi",
+    "number": 1,
+    "disabled": false,
+    "value": "3.76"
+  },
+  {
+    "name": "DEFAULT_bedKd",
+    "number": 1,
+    "disabled": false,
+    "value": "29.2"
+  },
+  {
+    "name": "EXTRUDE_MAXLENGTH",
+    "value": "300"
+  },
+  {
+    "name": "USE_XMIN_PLUG",
+    "disabled": true
+  },
+  {
+    "name": "USE_YMIN_PLUG",
+    "disabled": true
+  },
+  {
+    "name": "USE_XMAX_PLUG",
+    "disabled": false
+  },
+  {
+    "name": "USE_YMAX_PLUG",
+    "disabled": false
+  },
+  {
+    "name": "USE_ZMAX_PLUG",
+    "disabled": false
+  },
+  {
+    "name": "Z_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Z_MIN_PROBE_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "DEFAULT_AXIS_STEPS_PER_UNIT",
+    "value": "{ 100, 100, 100, 100 }",
+    "comment": "// default steps per unit for Kossel (GT2, 20 tooth)"
+  },
+  {
+    "name": "DEFAULT_MAX_FEEDRATE",
+    "value": "{ 200, 200, 200, 25 }"
+  },
+  {
+    "name": "DEFAULT_MAX_ACCELERATION",
+    "value": "{ 4000, 4000, 4000, 4000 }"
+  },
+  {
+    "name": "DEFAULT_YJERK",
+    "value": "DEFAULT_XJERK"
+  },
+  {
+    "name": "DEFAULT_ZJERK",
+    "value": "DEFAULT_YJERK",
+    "comment": "// Must be same as XY for delta"
+  },
+  {
+    "name": "Z_MIN_PROBE_ENDSTOP",
+    "comment": "// A3K leave disabled!"
+  },
+  {
+    "name": "FIX_MOUNTED_PROBE",
+    "disabled": false
+  },
+  {
+    "name": "X_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "0"
+  },
+  {
+    "name": "Y_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "0"
+  },
+  {
+    "name": "Z_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "0.10"
+  },
+  {
+    "name": "XY_PROBE_SPEED",
+    "value": "5000"
+  },
+  {
+    "name": "Z_PROBE_SPEED_SLOW",
+    "value": "(Z_PROBE_SPEED_FAST) / 6"
+  },
+  {
+    "name": "Z_CLEARANCE_DEPLOY_PROBE",
+    "value": "5"
+  },
+  {
+    "name": "Z_CLEARANCE_BETWEEN_PROBES",
+    "value": "2"
+  },
+  {
+    "name": "INVERT_X_DIR",
+    "value": "true",
+    "comment": "// DELTA does not invert"
+  },
+  {
+    "name": "INVERT_Z_DIR",
+    "value": "true"
+  },
+  {
+    "name": "Z_HOMING_HEIGHT",
+    "disabled": false,
+    "value": "15"
+  },
+  {
+    "name": "X_HOME_DIR",
+    "value": "1",
+    "comment": "// deltas always home to max"
+  },
+  {
+    "name": "Y_HOME_DIR",
+    "value": "1"
+  },
+  {
+    "name": "Z_HOME_DIR",
+    "value": "1"
+  },
+  {
+    "name": "X_MIN_POS",
+    "value": "-(DELTA_PRINTABLE_RADIUS)"
+  },
+  {
+    "name": "Y_MIN_POS",
+    "value": "-(DELTA_PRINTABLE_RADIUS)"
+  },
+  {
+    "name": "X_MAX_POS",
+    "value": "DELTA_PRINTABLE_RADIUS"
+  },
+  {
+    "name": "Y_MAX_POS",
+    "value": "DELTA_PRINTABLE_RADIUS"
+  },
+  {
+    "name": "Z_MAX_POS",
+    "value": "MANUAL_Z_HOME_POS"
+  },
+  {
+    "name": "MIN_SOFTWARE_ENDSTOPS",
+    "disabled": true
+  },
+  {
+    "name": "ENABLE_LEVELING_FADE_HEIGHT",
+    "disabled": true
+  },
+  {
+    "name": "GRID_MAX_POINTS_X",
+    "number": 0,
+    "value": "7"
+  },
+  {
+    "name": "LEFT_PROBE_BED_POSITION",
+    "value": "-(DELTA_PROBEABLE_RADIUS)"
+  },
+  {
+    "name": "RIGHT_PROBE_BED_POSITION",
+    "value": "DELTA_PROBEABLE_RADIUS"
+  },
+  {
+    "name": "FRONT_PROBE_BED_POSITION",
+    "value": "-(DELTA_PROBEABLE_RADIUS)"
+  },
+  {
+    "name": "BACK_PROBE_BED_POSITION",
+    "value": "DELTA_PROBEABLE_RADIUS"
+  },
+  {
+    "name": "MIN_PROBE_EDGE",
+    "value": "20"
+  },
+  {
+    "name": "BED_CENTER_AT_0_0",
+    "disabled": false
+  },
+  {
+    "name": "MANUAL_Z_HOME_POS",
+    "disabled": false,
+    "value": "DELTA_HEIGHT",
+    "comment": "// Distance between the nozzle to printbed after homing"
+  },
+  {
+    "name": "HOMING_FEEDRATE_Z",
+    "value": "(100*60)"
+  },
+  {
+    "name": "EEPROM_SETTINGS",
+    "disabled": false
+  },
+  {
+    "name": "DEFAULT_KEEPALIVE_INTERVAL",
+    "value": "5"
+  },
+  {
+    "name": "PREHEAT_1_TEMP_HOTEND",
+    "value": "195"
+  },
+  {
+    "name": "PREHEAT_1_TEMP_BED",
+    "value": "60"
+  },
+  {
+    "name": "PREHEAT_2_TEMP_BED",
+    "value": "100"
+  },
+  {
+    "name": "PRINTCOUNTER",
+    "disabled": false
+  },
+  {
+    "name": "DISPLAY_CHARSET_HD44780",
+    "value": "WESTERN"
+  },
+  {
+    "name": "SDSUPPORT",
+    "disabled": false
+  },
+  {
+    "name": "SD_CHECK_AND_RETRY",
+    "disabled": false
+  },
+  {
+    "name": "REPRAP_DISCOUNT_SMART_CONTROLLER",
+    "disabled": false
+  },
+  {
+    "name": "DEFAULT_NOMINAL_FILAMENT_DIA",
+    "value": "1.75"
+  },
+  {
+    "name": "MEASURED_UPPER_LIMIT",
+    "value": "1.95"
+  },
+  {
+    "name": "MEASURED_LOWER_LIMIT",
+    "value": "1.20"
+  }
+]

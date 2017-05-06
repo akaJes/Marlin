@@ -1,0 +1,11 @@
+#define MORGAN_SCARA
+//#define MAKERARM_SCARA
+  //#define DEBUG_SCARA_KINEMATICS
+  #define SCARA_SEGMENTS_PER_SECOND 200
+  #define SCARA_LINKAGE_1 150 //mm
+  #define SCARA_LINKAGE_2 150 //mm
+  #define SCARA_OFFSET_X 100 //mm
+  #define SCARA_OFFSET_Y -56 //mm
+  #define MIDDLE_DEAD_ZONE_R 0 //mm
+  #define THETA_HOMING_OFFSET 0  //calculatated from Calibration Guide and command M360 / M114 see picture in http://reprap.harleystudio.co.za/?page_id=1073
+  #define PSI_HOMING_OFFSET   0  //calculatated from Calibration Guide and command M364 / M114 see picture in http://reprap.harleystudio.co.za/?page_id=1073

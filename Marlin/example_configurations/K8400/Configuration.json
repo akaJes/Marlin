@@ -1,0 +1,202 @@
+[
+  {
+    "name": "STRING_CONFIG_H_AUTHOR",
+    "value": "\"(Anthony Birkett, default config)\""
+  },
+  {
+    "name": "MOTHERBOARD",
+    "value": "BOARD_K8400"
+  },
+  {
+    "name": "POWER_SUPPLY",
+    "value": "1"
+  },
+  {
+    "name": "TEMP_SENSOR_0",
+    "value": "5"
+  },
+  {
+    "name": "TEMP_RESIDENCY_TIME",
+    "value": "2"
+  },
+  {
+    "name": "TEMP_HYSTERESIS",
+    "value": "5"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 0,
+    "disabled": true
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 2,
+    "disabled": false
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 2,
+    "disabled": false
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 2,
+    "disabled": false
+  },
+  {
+    "name": "X_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Y_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Z_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "X_MAX_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Y_MAX_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Z_MAX_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Z_MIN_PROBE_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "DEFAULT_AXIS_STEPS_PER_UNIT",
+    "value": "{ 134.74, 134.74, 4266.66, 148.7 }"
+  },
+  {
+    "name": "DEFAULT_MAX_FEEDRATE",
+    "value": "{ 160, 160, 10, 10000 }"
+  },
+  {
+    "name": "DEFAULT_MAX_ACCELERATION",
+    "value": "{ 9000, 9000, 100, 10000 }"
+  },
+  {
+    "name": "DEFAULT_ACCELERATION",
+    "value": "6000"
+  },
+  {
+    "name": "DEFAULT_RETRACT_ACCELERATION",
+    "value": "6000"
+  },
+  {
+    "name": "DEFAULT_XJERK",
+    "value": "10.0"
+  },
+  {
+    "name": "DEFAULT_YJERK",
+    "value": "10.0"
+  },
+  {
+    "name": "DEFAULT_ZJERK",
+    "value": "0.5"
+  },
+  {
+    "name": "DEFAULT_EJERK",
+    "value": "20.0"
+  },
+  {
+    "name": "Z_CLEARANCE_DEPLOY_PROBE",
+    "value": "15"
+  },
+  {
+    "name": "INVERT_Z_DIR",
+    "value": "true"
+  },
+  {
+    "name": "INVERT_E1_DIR",
+    "value": "true"
+  },
+  {
+    "name": "Y_MIN_POS",
+    "value": "20"
+  },
+  {
+    "name": "Z_MAX_POS",
+    "value": "190"
+  },
+  {
+    "name": "HOMING_FEEDRATE_Z",
+    "value": "(8*60)"
+  },
+  {
+    "name": "EEPROM_SETTINGS",
+    "disabled": false
+  },
+  {
+    "name": "PREHEAT_1_TEMP_HOTEND",
+    "value": "210"
+  },
+  {
+    "name": "PREHEAT_1_TEMP_BED",
+    "value": "0"
+  },
+  {
+    "name": "PREHEAT_1_FAN_SPEED",
+    "value": "165"
+  },
+  {
+    "name": "PREHEAT_2_TEMP_HOTEND",
+    "value": "245"
+  },
+  {
+    "name": "PREHEAT_2_TEMP_BED",
+    "value": "0"
+  },
+  {
+    "name": "PREHEAT_2_FAN_SPEED",
+    "value": "165"
+  },
+  {
+    "name": "ULTRA_LCD",
+    "disabled": false
+  },
+  {
+    "name": "SDSUPPORT",
+    "disabled": false
+  },
+  {
+    "name": "ENCODER_PULSES_PER_STEP",
+    "disabled": false,
+    "value": "4"
+  },
+  {
+    "name": "ENCODER_STEPS_PER_MENU_ITEM",
+    "disabled": false,
+    "value": "1"
+  },
+  {
+    "name": "REVERSE_MENU_DIRECTION",
+    "disabled": false
+  },
+  {
+    "name": "ULTIMAKERCONTROLLER",
+    "disabled": false
+  },
+  {
+    "name": "REPRAPWORLD_KEYPAD_MOVE_STEP",
+    "value": "10.0"
+  }
+]

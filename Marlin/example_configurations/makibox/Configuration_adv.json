@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Z_DUAL_ENDSTOPS_ADJUSTMENT",
+    "comment": "// use M666 command to determine this value"
+  },
+  {
+    "name": "DEFAULT_STEPPER_DEACTIVE_TIME",
+    "value": "60"
+  },
+  {
+    "name": "DIGIPOT_I2C_NUM_CHANNELS",
+    "value": "4"
+  },
+  {
+    "name": "DIGIPOT_I2C_MOTOR_CURRENTS",
+    "value": "{ 1.7, 1.7, 1.7, 1.7 }",
+    "comment": "// 5DPRINT"
+  },
+  {
+    "name": "SD_DETECT_INVERTED",
+    "disabled": true
+  }
+]

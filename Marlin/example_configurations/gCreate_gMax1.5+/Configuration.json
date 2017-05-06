@@ -1,0 +1,404 @@
+[
+  {
+    "name": "SHOW_CUSTOM_BOOTSCREEN",
+    "disabled": false
+  },
+  {
+    "name": "MOTHERBOARD",
+    "disabled": false,
+    "value": "BOARD_RAMPS_14_EFB",
+    "comment": "// gMax users please note:  This is a Roxy modification.   I print on glass and"
+  },
+  {
+    "name": "MOTHERBOARD",
+    "disabled": false,
+    "value": "BOARD_RAMPS_14_EFB",
+    "comment": "// gMax users please note:  This is a Roxy modification.   I print on glass and"
+  },
+  {
+    "name": "TEMP_SENSOR_BED",
+    "disabled": false,
+    "value": "75",
+    "comment": "// gMax-1.5+ users please note:   This is a Roxy modification to the printer.   I want"
+  },
+  {
+    "name": "CUSTOM_MACHINE_NAME",
+    "disabled": false,
+    "value": "\"UBL v1.0 \""
+  },
+  {
+    "name": "TEMP_SENSOR_0",
+    "value": "5"
+  },
+  {
+    "name": "TEMP_SENSOR_BED",
+    "disabled": false,
+    "value": "75",
+    "comment": "// gMax-1.5+ users please note:   This is a Roxy modification to the printer.   I want"
+  },
+  {
+    "name": "TEMP_RESIDENCY_TIME",
+    "value": "16"
+  },
+  {
+    "name": "TEMP_HYSTERESIS",
+    "value": "12"
+  },
+  {
+    "name": "TEMP_WINDOW",
+    "value": "5"
+  },
+  {
+    "name": "HEATER_0_MAXTEMP",
+    "value": "245"
+  },
+  {
+    "name": "HEATER_1_MAXTEMP",
+    "value": "245"
+  },
+  {
+    "name": "HEATER_2_MAXTEMP",
+    "value": "245"
+  },
+  {
+    "name": "HEATER_3_MAXTEMP",
+    "value": "245"
+  },
+  {
+    "name": "HEATER_4_MAXTEMP",
+    "value": "245"
+  },
+  {
+    "name": "BED_MAXTEMP",
+    "value": "115"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 0,
+    "value": "15.35"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 0,
+    "value": "0.85"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 0,
+    "value": "69.45"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 1,
+    "value": "22.2"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 1,
+    "value": "1.08"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 1,
+    "value": "114"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 2,
+    "value": "63.0"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 2,
+    "value": "2.25"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 2,
+    "value": "440"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 2,
+    "value": "63.0"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 2,
+    "value": "2.25"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 2,
+    "value": "440"
+  },
+  {
+    "name": "PIDTEMPBED",
+    "disabled": false
+  },
+  {
+    "name": "DEFAULT_bedKp",
+    "number": 0,
+    "value": "135.44"
+  },
+  {
+    "name": "DEFAULT_bedKi",
+    "number": 0,
+    "value": "24.60"
+  },
+  {
+    "name": "DEFAULT_bedKd",
+    "number": 0,
+    "value": "186.40"
+  },
+  {
+    "name": "USE_YMIN_PLUG",
+    "disabled": true
+  },
+  {
+    "name": "USE_YMAX_PLUG",
+    "disabled": false
+  },
+  {
+    "name": "ENDSTOPPULLUPS",
+    "disabled": true
+  },
+  {
+    "name": "X_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Y_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Y_MAX_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "ENDSTOP_INTERRUPTS_FEATURE",
+    "disabled": false
+  },
+  {
+    "name": "DEFAULT_AXIS_STEPS_PER_UNIT",
+    "value": "{ 80, 80, 400, 96 }"
+  },
+  {
+    "name": "DEFAULT_MAX_FEEDRATE",
+    "value": "{ 500, 500, 25, 25 }"
+  },
+  {
+    "name": "DEFAULT_MAX_ACCELERATION",
+    "value": "{ 800, 800, 700, 10000 }"
+  },
+  {
+    "name": "DEFAULT_ACCELERATION",
+    "value": "500"
+  },
+  {
+    "name": "DEFAULT_RETRACT_ACCELERATION",
+    "value": "400"
+  },
+  {
+    "name": "DEFAULT_TRAVEL_ACCELERATION",
+    "value": "400"
+  },
+  {
+    "name": "DEFAULT_XJERK",
+    "value": "17.0"
+  },
+  {
+    "name": "DEFAULT_YJERK",
+    "value": "17.0"
+  },
+  {
+    "name": "DEFAULT_ZJERK",
+    "value": "1.0"
+  },
+  {
+    "name": "DEFAULT_EJERK",
+    "value": "4.0"
+  },
+  {
+    "name": "BLTOUCH",
+    "disabled": false
+  },
+  {
+    "name": "BLTOUCH_DELAY",
+    "disabled": false,
+    "value": "500"
+  },
+  {
+    "name": "BLTOUCH_HEATERS_OFF",
+    "disabled": false,
+    "comment": "// if defined the printer's heaters are turned off during probe event"
+  },
+  {
+    "name": "X_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "-17"
+  },
+  {
+    "name": "Y_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "-10"
+  },
+  {
+    "name": "Z_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "-1.027"
+  },
+  {
+    "name": "XY_PROBE_SPEED",
+    "value": "7500"
+  },
+  {
+    "name": "Z_CLEARANCE_DEPLOY_PROBE",
+    "value": "15"
+  },
+  {
+    "name": "Z_CLEARANCE_BETWEEN_PROBES",
+    "value": "6"
+  },
+  {
+    "name": "Z_MIN_PROBE_REPEATABILITY_TEST",
+    "disabled": false
+  },
+  {
+    "name": "INVERT_X_DIR",
+    "value": "true"
+  },
+  {
+    "name": "INVERT_Z_DIR",
+    "value": "true"
+  },
+  {
+    "name": "Z_HOMING_HEIGHT",
+    "disabled": false,
+    "value": "10"
+  },
+  {
+    "name": "Y_HOME_DIR",
+    "value": "1"
+  },
+  {
+    "name": "X_MAX_POS",
+    "value": "420",
+    "comment": "// These numbers are not accurate for an unaltered gMax 1.5+ printer.  My print bed"
+  },
+  {
+    "name": "Y_MAX_POS",
+    "value": "420",
+    "comment": "// is inset a noticable amount from the edge of the bed.  Combined with the inset,"
+  },
+  {
+    "name": "Z_MAX_POS",
+    "value": "500"
+  },
+  {
+    "name": "MIN_SOFTWARE_ENDSTOPS",
+    "disabled": true
+  },
+  {
+    "name": "FILAMENT_RUNOUT_SENSOR",
+    "disabled": false
+  },
+  {
+    "name": "AUTO_BED_LEVELING_UBL",
+    "disabled": false
+  },
+  {
+    "name": "DEBUG_LEVELING_FEATURE",
+    "disabled": false
+  },
+  {
+    "name": "UBL_MESH_INSET",
+    "value": "45"
+  },
+  {
+    "name": "UBL_PROBE_PT_1_X",
+    "value": "53"
+  },
+  {
+    "name": "UBL_PROBE_PT_1_Y",
+    "value": "323"
+  },
+  {
+    "name": "UBL_PROBE_PT_2_X",
+    "value": "53"
+  },
+  {
+    "name": "UBL_PROBE_PT_2_Y",
+    "value": "63"
+  },
+  {
+    "name": "UBL_PROBE_PT_3_X",
+    "value": "348"
+  },
+  {
+    "name": "UBL_PROBE_PT_3_Y",
+    "value": "211"
+  },
+  {
+    "name": "UBL_G26_MESH_EDITING",
+    "disabled": false
+  },
+  {
+    "name": "Z_SAFE_HOMING",
+    "disabled": false
+  },
+  {
+    "name": "Z_SAFE_HOMING_X_POINT",
+    "value": "(((X_MIN_POS + X_MAX_POS) / 2) - 4)"
+  },
+  {
+    "name": "Z_SAFE_HOMING_Y_POINT",
+    "value": "(((Y_MIN_POS + Y_MAX_POS) / 2) + 4)"
+  },
+  {
+    "name": "HOMING_FEEDRATE_XY",
+    "value": "(60*60)"
+  },
+  {
+    "name": "HOMING_FEEDRATE_Z",
+    "value": "(14*60)"
+  },
+  {
+    "name": "EEPROM_SETTINGS",
+    "disabled": false
+  },
+  {
+    "name": "HOST_KEEPALIVE_FEATURE",
+    "disabled": true
+  },
+  {
+    "name": "PREHEAT_1_TEMP_HOTEND",
+    "value": "200"
+  },
+  {
+    "name": "SDSUPPORT",
+    "disabled": false
+  },
+  {
+    "name": "SD_CHECK_AND_RETRY",
+    "disabled": false
+  },
+  {
+    "name": "ENCODER_PULSES_PER_STEP",
+    "disabled": false
+  },
+  {
+    "name": "ENCODER_STEPS_PER_MENU_ITEM",
+    "disabled": false
+  },
+  {
+    "name": "REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER",
+    "disabled": false
+  },
+  {
+    "name": "NUM_SERVOS",
+    "disabled": false,
+    "value": "2"
+  },
+  {
+    "name": "DEFAULT_NOMINAL_FILAMENT_DIA",
+    "value": "1.75"
+  }
+]

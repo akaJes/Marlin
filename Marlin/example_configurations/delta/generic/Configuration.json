@@ -1,0 +1,209 @@
+[
+  {
+    "name": "CUSTOM_MACHINE_NAME",
+    "disabled": false,
+    "value": "\"Deltabot\""
+  },
+  {
+    "name": "POWER_SUPPLY",
+    "value": "1"
+  },
+  {
+    "name": "TEMP_SENSOR_0",
+    "value": "-1"
+  },
+  {
+    "name": "TEMP_BED_RESIDENCY_TIME",
+    "value": "0"
+  },
+  {
+    "name": "USE_XMIN_PLUG",
+    "disabled": true
+  },
+  {
+    "name": "USE_YMIN_PLUG",
+    "disabled": true
+  },
+  {
+    "name": "USE_ZMIN_PLUG",
+    "comment": "// a Z probe"
+  },
+  {
+    "name": "USE_XMAX_PLUG",
+    "disabled": false
+  },
+  {
+    "name": "USE_YMAX_PLUG",
+    "disabled": false
+  },
+  {
+    "name": "USE_ZMAX_PLUG",
+    "disabled": false
+  },
+  {
+    "name": "X_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Y_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Z_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "X_MAX_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Y_MAX_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Z_MAX_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Z_MIN_PROBE_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "DEFAULT_AXIS_STEPS_PER_UNIT",
+    "value": "{ 80, 80, 80, 760*1.1 }",
+    "comment": "// default steps per unit for Kossel (GT2, 20 tooth)"
+  },
+  {
+    "name": "DEFAULT_MAX_FEEDRATE",
+    "value": "{ 500, 500, 500, 25 }"
+  },
+  {
+    "name": "DEFAULT_MAX_ACCELERATION",
+    "value": "{ 9000, 9000, 9000, 10000 }"
+  },
+  {
+    "name": "DEFAULT_ZJERK",
+    "value": "20.0",
+    "comment": "// Must be same as XY for delta"
+  },
+  {
+    "name": "Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN",
+    "disabled": true
+  },
+  {
+    "name": "Z_MIN_PROBE_ENDSTOP",
+    "disabled": false
+  },
+  {
+    "name": "X_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "0"
+  },
+  {
+    "name": "Y_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "-10"
+  },
+  {
+    "name": "Z_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "-3.5"
+  },
+  {
+    "name": "XY_PROBE_SPEED",
+    "value": "4000"
+  },
+  {
+    "name": "Z_CLEARANCE_DEPLOY_PROBE",
+    "value": "15"
+  },
+  {
+    "name": "INVERT_X_DIR",
+    "comment": "// DELTA does not invert"
+  },
+  {
+    "name": "INVERT_Y_DIR",
+    "value": "false"
+  },
+  {
+    "name": "X_HOME_DIR",
+    "value": "1",
+    "comment": "// deltas always home to max"
+  },
+  {
+    "name": "Y_HOME_DIR",
+    "value": "1"
+  },
+  {
+    "name": "Z_HOME_DIR",
+    "value": "1"
+  },
+  {
+    "name": "X_MIN_POS",
+    "value": "-(DELTA_PRINTABLE_RADIUS)"
+  },
+  {
+    "name": "Y_MIN_POS",
+    "value": "-(DELTA_PRINTABLE_RADIUS)"
+  },
+  {
+    "name": "X_MAX_POS",
+    "value": "DELTA_PRINTABLE_RADIUS"
+  },
+  {
+    "name": "Y_MAX_POS",
+    "value": "DELTA_PRINTABLE_RADIUS"
+  },
+  {
+    "name": "Z_MAX_POS",
+    "value": "MANUAL_Z_HOME_POS"
+  },
+  {
+    "name": "ENABLE_LEVELING_FADE_HEIGHT",
+    "disabled": true
+  },
+  {
+    "name": "GRID_MAX_POINTS_X",
+    "number": 0,
+    "value": "9"
+  },
+  {
+    "name": "LEFT_PROBE_BED_POSITION",
+    "value": "-(DELTA_PROBEABLE_RADIUS)"
+  },
+  {
+    "name": "RIGHT_PROBE_BED_POSITION",
+    "value": "DELTA_PROBEABLE_RADIUS"
+  },
+  {
+    "name": "FRONT_PROBE_BED_POSITION",
+    "value": "-(DELTA_PROBEABLE_RADIUS)"
+  },
+  {
+    "name": "BACK_PROBE_BED_POSITION",
+    "value": "DELTA_PROBEABLE_RADIUS"
+  },
+  {
+    "name": "BED_CENTER_AT_0_0",
+    "disabled": false
+  },
+  {
+    "name": "MANUAL_Z_HOME_POS",
+    "disabled": false,
+    "value": "DELTA_HEIGHT",
+    "comment": "// Distance between the nozzle to printbed after homing"
+  },
+  {
+    "name": "HOMING_FEEDRATE_Z",
+    "value": "(200*60)"
+  },
+  {
+    "name": "PREHEAT_1_FAN_SPEED",
+    "value": "255"
+  },
+  {
+    "name": "PREHEAT_2_TEMP_BED",
+    "value": "100"
+  },
+  {
+    "name": "PREHEAT_2_FAN_SPEED",
+    "value": "255"
+  }
+]

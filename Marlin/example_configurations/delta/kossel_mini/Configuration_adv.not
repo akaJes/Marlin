@@ -1,0 +1,1 @@
+  #define MANUAL_FEEDRATE_XYZ 50*60

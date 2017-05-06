@@ -1,0 +1,320 @@
+[
+  {
+    "name": "STRING_CONFIG_H_AUTHOR",
+    "value": "\"@jbrazio\""
+  },
+  {
+    "name": "SHOW_CUSTOM_BOOTSCREEN",
+    "disabled": false
+  },
+  {
+    "name": "BAUDRATE",
+    "value": "115200"
+  },
+  {
+    "name": "MOTHERBOARD",
+    "value": "BOARD_BQ_ZUM_MEGA_3D"
+  },
+  {
+    "name": "CUSTOM_MACHINE_NAME",
+    "disabled": false,
+    "value": "\"BQ Hephestos 2\""
+  },
+  {
+    "name": "MACHINE_UUID",
+    "disabled": false,
+    "value": "\"8d083632-40c5-4649-85b8-43d9ae6c5d55\"",
+    "comment": "// BQ Hephestos 2 standard config"
+  },
+  {
+    "name": "TEMP_SENSOR_0",
+    "value": "70"
+  },
+  {
+    "name": "TEMP_BED_RESIDENCY_TIME",
+    "value": "0"
+  },
+  {
+    "name": "HEATER_0_MINTEMP",
+    "value": "15"
+  },
+  {
+    "name": "HEATER_0_MAXTEMP",
+    "value": "250"
+  },
+  {
+    "name": "PID_FUNCTIONAL_RANGE",
+    "value": "50"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 0,
+    "value": "19.18"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 0,
+    "value": "1.36"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 0,
+    "value": "67.42"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 1,
+    "value": "10.7"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 1,
+    "value": "0.45"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 1,
+    "value": "3"
+  },
+  {
+    "name": "MAX_BED_POWER",
+    "disabled": true
+  },
+  {
+    "name": "THERMAL_PROTECTION_BED",
+    "disabled": true
+  },
+  {
+    "name": "X_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Y_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "X_MAX_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Y_MAX_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Z_MAX_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "ENDSTOP_INTERRUPTS_FEATURE",
+    "disabled": false
+  },
+  {
+    "name": "DEFAULT_AXIS_STEPS_PER_UNIT",
+    "value": "{ 160, 160, 8000, 204 }"
+  },
+  {
+    "name": "DEFAULT_MAX_FEEDRATE",
+    "value": "{ 250, 250, 2, 200 }"
+  },
+  {
+    "name": "DEFAULT_MAX_ACCELERATION",
+    "value": "{ 800, 800, 20, 1000 }"
+  },
+  {
+    "name": "DEFAULT_ACCELERATION",
+    "value": "800"
+  },
+  {
+    "name": "DEFAULT_RETRACT_ACCELERATION",
+    "value": "1000"
+  },
+  {
+    "name": "DEFAULT_TRAVEL_ACCELERATION",
+    "value": "1000"
+  },
+  {
+    "name": "DEFAULT_XJERK",
+    "value": "10.0"
+  },
+  {
+    "name": "DEFAULT_YJERK",
+    "value": "10.0"
+  },
+  {
+    "name": "DEFAULT_EJERK",
+    "value": "1.0"
+  },
+  {
+    "name": "FIX_MOUNTED_PROBE",
+    "disabled": false
+  },
+  {
+    "name": "X_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "34"
+  },
+  {
+    "name": "Y_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "15"
+  },
+  {
+    "name": "Z_CLEARANCE_DEPLOY_PROBE",
+    "value": "0"
+  },
+  {
+    "name": "Z_CLEARANCE_BETWEEN_PROBES",
+    "value": "2"
+  },
+  {
+    "name": "Z_PROBE_OFFSET_RANGE_MIN",
+    "value": "-2"
+  },
+  {
+    "name": "Z_PROBE_OFFSET_RANGE_MAX",
+    "value": "0"
+  },
+  {
+    "name": "INVERT_X_DIR",
+    "value": "true"
+  },
+  {
+    "name": "INVERT_Z_DIR",
+    "value": "true"
+  },
+  {
+    "name": "INVERT_E0_DIR",
+    "value": "true"
+  },
+  {
+    "name": "Z_HOMING_HEIGHT",
+    "disabled": false,
+    "value": "5"
+  },
+  {
+    "name": "X_MAX_POS",
+    "value": "210"
+  },
+  {
+    "name": "Y_MAX_POS",
+    "value": "297"
+  },
+  {
+    "name": "Z_MAX_POS",
+    "value": "210"
+  },
+  {
+    "name": "LEFT_PROBE_BED_POSITION",
+    "value": "X_MIN_POS + X_PROBE_OFFSET_FROM_EXTRUDER"
+  },
+  {
+    "name": "RIGHT_PROBE_BED_POSITION",
+    "value": "X_MAX_POS - (X_PROBE_OFFSET_FROM_EXTRUDER)"
+  },
+  {
+    "name": "FRONT_PROBE_BED_POSITION",
+    "value": "Y_MIN_POS + Y_PROBE_OFFSET_FROM_EXTRUDER"
+  },
+  {
+    "name": "BACK_PROBE_BED_POSITION",
+    "value": "Y_MAX_POS - (Y_PROBE_OFFSET_FROM_EXTRUDER)"
+  },
+  {
+    "name": "ABL_PROBE_PT_1_X",
+    "value": "X_MIN_POS + X_PROBE_OFFSET_FROM_EXTRUDER"
+  },
+  {
+    "name": "ABL_PROBE_PT_1_Y",
+    "value": "Y_MIN_POS + Y_PROBE_OFFSET_FROM_EXTRUDER"
+  },
+  {
+    "name": "ABL_PROBE_PT_2_X",
+    "value": "X_MAX_POS - (X_PROBE_OFFSET_FROM_EXTRUDER)"
+  },
+  {
+    "name": "ABL_PROBE_PT_2_Y",
+    "value": "Y_MIN_POS + Y_PROBE_OFFSET_FROM_EXTRUDER"
+  },
+  {
+    "name": "ABL_PROBE_PT_3_X",
+    "value": "((X_MIN_POS + X_MAX_POS) / 2)"
+  },
+  {
+    "name": "ABL_PROBE_PT_3_Y",
+    "value": "Y_MAX_POS - (Y_PROBE_OFFSET_FROM_EXTRUDER)"
+  },
+  {
+    "name": "Z_SAFE_HOMING",
+    "disabled": false
+  },
+  {
+    "name": "HOMING_FEEDRATE_XY",
+    "value": "(60*60)"
+  },
+  {
+    "name": "HOMING_FEEDRATE_Z",
+    "value": "120"
+  },
+  {
+    "name": "EEPROM_SETTINGS",
+    "disabled": false
+  },
+  {
+    "name": "DEFAULT_KEEPALIVE_INTERVAL",
+    "value": "10"
+  },
+  {
+    "name": "PREHEAT_1_TEMP_HOTEND",
+    "value": "210"
+  },
+  {
+    "name": "NOZZLE_PARK_FEATURE",
+    "disabled": false
+  },
+  {
+    "name": "NOZZLE_PARK_POINT",
+    "value": "{ (X_MIN_POS + 10), (Y_MAX_POS - 10), 10 }"
+  },
+  {
+    "name": "NOZZLE_CLEAN_FEATURE",
+    "disabled": false
+  },
+  {
+    "name": "NOZZLE_CLEAN_START_POINT",
+    "value": "{ X_MIN_POS + 10, Y_MAX_POS - 9, (Z_MIN_POS + 0.5)}"
+  },
+  {
+    "name": "NOZZLE_CLEAN_END_POINT",
+    "value": "{ X_MIN_POS + 90, Y_MAX_POS - 0, (Z_MIN_POS + 0.5)}"
+  },
+  {
+    "name": "NOZZLE_CLEAN_GOBACK",
+    "disabled": true
+  },
+  {
+    "name": "PRINTCOUNTER",
+    "disabled": false
+  },
+  {
+    "name": "SDSUPPORT",
+    "disabled": false
+  },
+  {
+    "name": "SD_CHECK_AND_RETRY",
+    "disabled": false
+  },
+  {
+    "name": "BQ_LCD_SMART_CONTROLLER",
+    "disabled": false
+  },
+  {
+    "name": "FAN_SOFT_PWM",
+    "disabled": false
+  },
+  {
+    "name": "MEASURED_UPPER_LIMIT",
+    "value": "2.00"
+  },
+  {
+    "name": "MEASURED_LOWER_LIMIT",
+    "value": "1.60"
+  }
+]

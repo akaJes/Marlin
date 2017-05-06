@@ -1,0 +1,245 @@
+[
+  {
+    "name": "BAUDRATE",
+    "value": "115200"
+  },
+  {
+    "name": "MOTHERBOARD",
+    "value": "BOARD_BRAINWAVE_PRO"
+  },
+  {
+    "name": "CUSTOM_MACHINE_NAME",
+    "disabled": false,
+    "value": "\"Kossel Pro\""
+  },
+  {
+    "name": "POWER_SUPPLY",
+    "value": "1"
+  },
+  {
+    "name": "TEMP_SENSOR_0",
+    "value": "5"
+  },
+  {
+    "name": "TEMP_SENSOR_BED",
+    "value": "5"
+  },
+  {
+    "name": "TEMP_BED_RESIDENCY_TIME",
+    "value": "0"
+  },
+  {
+    "name": "PID_MAX",
+    "value": "125"
+  },
+  {
+    "name": "PID_FUNCTIONAL_RANGE",
+    "value": "50"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 0,
+    "value": "19.30"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 0,
+    "value": "3.51"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 0,
+    "value": "26.56"
+  },
+  {
+    "name": "PIDTEMPBED",
+    "disabled": false
+  },
+  {
+    "name": "DEFAULT_bedKp",
+    "number": 0,
+    "value": "370.25"
+  },
+  {
+    "name": "DEFAULT_bedKi",
+    "number": 0,
+    "value": "62.77"
+  },
+  {
+    "name": "DEFAULT_bedKd",
+    "number": 0,
+    "value": "545.98"
+  },
+  {
+    "name": "USE_XMIN_PLUG",
+    "disabled": true
+  },
+  {
+    "name": "USE_YMIN_PLUG",
+    "disabled": true
+  },
+  {
+    "name": "USE_ZMIN_PLUG",
+    "comment": "// a Z probe"
+  },
+  {
+    "name": "USE_XMAX_PLUG",
+    "disabled": false
+  },
+  {
+    "name": "USE_YMAX_PLUG",
+    "disabled": false
+  },
+  {
+    "name": "USE_ZMAX_PLUG",
+    "disabled": false
+  },
+  {
+    "name": "DEFAULT_AXIS_STEPS_PER_UNIT",
+    "value": "{ XYZ_STEPS, XYZ_STEPS, XYZ_STEPS, 184.8 }"
+  },
+  {
+    "name": "DEFAULT_MAX_FEEDRATE",
+    "value": "{ 200, 200, 200, 200 }"
+  },
+  {
+    "name": "DEFAULT_MAX_ACCELERATION",
+    "value": "{ 9000, 9000, 9000, 9000 }"
+  },
+  {
+    "name": "DEFAULT_ZJERK",
+    "value": "20.0",
+    "comment": "// Must be same as XY for delta"
+  },
+  {
+    "name": "X_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "-23",
+    "comment": "// KosselPro actual: -22.919"
+  },
+  {
+    "name": "Y_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "-6",
+    "comment": "// KosselPro actual: -6.304"
+  },
+  {
+    "name": "Z_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "-17.25",
+    "comment": "// Increase this if the first layer is too thin (remember: it's a negative number so increase means closer to zero)."
+  },
+  {
+    "name": "Z_CLEARANCE_DEPLOY_PROBE",
+    "value": "100"
+  },
+  {
+    "name": "Z_PROBE_OFFSET_RANGE_MIN",
+    "value": "-15"
+  },
+  {
+    "name": "Z_PROBE_OFFSET_RANGE_MAX",
+    "value": "5"
+  },
+  {
+    "name": "INVERT_X_DIR",
+    "value": "true"
+  },
+  {
+    "name": "INVERT_Z_DIR",
+    "value": "true"
+  },
+  {
+    "name": "INVERT_E0_DIR",
+    "value": "true"
+  },
+  {
+    "name": "X_HOME_DIR",
+    "value": "1",
+    "comment": "// deltas always home to max"
+  },
+  {
+    "name": "Y_HOME_DIR",
+    "value": "1"
+  },
+  {
+    "name": "Z_HOME_DIR",
+    "value": "1"
+  },
+  {
+    "name": "X_MIN_POS",
+    "value": "-(DELTA_PRINTABLE_RADIUS)"
+  },
+  {
+    "name": "Y_MIN_POS",
+    "value": "-(DELTA_PRINTABLE_RADIUS)"
+  },
+  {
+    "name": "X_MAX_POS",
+    "value": "DELTA_PRINTABLE_RADIUS"
+  },
+  {
+    "name": "Y_MAX_POS",
+    "value": "DELTA_PRINTABLE_RADIUS"
+  },
+  {
+    "name": "Z_MAX_POS",
+    "value": "MANUAL_Z_HOME_POS"
+  },
+  {
+    "name": "ENABLE_LEVELING_FADE_HEIGHT",
+    "disabled": true
+  },
+  {
+    "name": "GRID_MAX_POINTS_X",
+    "number": 0,
+    "value": "7"
+  },
+  {
+    "name": "LEFT_PROBE_BED_POSITION",
+    "value": "-(DELTA_PROBEABLE_RADIUS)"
+  },
+  {
+    "name": "RIGHT_PROBE_BED_POSITION",
+    "value": "DELTA_PROBEABLE_RADIUS"
+  },
+  {
+    "name": "FRONT_PROBE_BED_POSITION",
+    "value": "-(DELTA_PROBEABLE_RADIUS)"
+  },
+  {
+    "name": "BACK_PROBE_BED_POSITION",
+    "value": "DELTA_PROBEABLE_RADIUS"
+  },
+  {
+    "name": "BED_CENTER_AT_0_0",
+    "disabled": false
+  },
+  {
+    "name": "MANUAL_Z_HOME_POS",
+    "disabled": false,
+    "value": "DELTA_HEIGHT",
+    "comment": "// Distance between the nozzle to printbed after homing"
+  },
+  {
+    "name": "Z_SAFE_HOMING",
+    "disabled": false
+  },
+  {
+    "name": "HOMING_FEEDRATE_Z",
+    "value": "(200*60)"
+  },
+  {
+    "name": "PREHEAT_1_FAN_SPEED",
+    "value": "255"
+  },
+  {
+    "name": "PREHEAT_2_TEMP_BED",
+    "value": "100"
+  },
+  {
+    "name": "PREHEAT_2_FAN_SPEED",
+    "value": "255"
+  },
+  {
+    "name": "SDSUPPORT",
+    "disabled": false
+  }
+]

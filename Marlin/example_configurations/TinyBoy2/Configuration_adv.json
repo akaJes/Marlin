@@ -1,0 +1,18 @@
+[
+  {
+    "name": "LCD_INFO_MENU",
+    "disabled": false
+  },
+  {
+    "name": "TX_BUFFER_SIZE",
+    "value": "64"
+  },
+  {
+    "name": "AUTO_REPORT_TEMPERATURES",
+    "disabled": false
+  },
+  {
+    "name": "EXTENDED_CAPABILITIES_REPORT",
+    "disabled": false
+  }
+]

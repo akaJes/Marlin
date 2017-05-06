@@ -1,0 +1,30 @@
+[
+  {
+    "name": "ENDSTOPS_ALWAYS_ON_DEFAULT",
+    "disabled": false
+  },
+  {
+    "name": "Z_DUAL_ENDSTOPS_ADJUSTMENT",
+    "comment": "// use M666 command to determine this value"
+  },
+  {
+    "name": "DEFAULT_STEPPER_DEACTIVE_TIME",
+    "value": "60"
+  },
+  {
+    "name": "MANUAL_FEEDRATE",
+    "value": "{120*60, 120*60, 18*60, 60}"
+  },
+  {
+    "name": "D_FILAMENT",
+    "value": "1.75"
+  },
+  {
+    "name": "RETRACT_FEEDRATE",
+    "value": "80"
+  },
+  {
+    "name": "RETRACT_RECOVER_LENGTH_SWAP",
+    "disabled": true
+  }
+]

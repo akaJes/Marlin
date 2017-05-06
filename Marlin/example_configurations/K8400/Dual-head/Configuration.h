@@ -58,8 +58,8 @@
 //===========================================================================
 //============================= DELTA Printer ===============================
 //===========================================================================
-// For Delta printers start with one of the configuration files in the
-// example_configurations/delta directory and customize for your machine.
+// For a Delta printer replace the configuration files with the files in the
+// example_configurations/delta directory.
 //
 
 //===========================================================================
@@ -74,7 +74,7 @@
 // User-specified version info of this build to display in [Pronterface, etc] terminal window during
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
-#define STRING_CONFIG_H_AUTHOR "(Anthony Birkett, default config)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(Anthony Birkett, default config)"// Who made the changes.
 #define SHOW_BOOTSCREEN
 #define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
 #define STRING_SPLASH_LINE2 WEBSITE_URL         // will be shown during bootup in line 2
@@ -516,7 +516,8 @@
 #define DEFAULT_XJERK                 10.0
 #define DEFAULT_YJERK                 10.0
 #define DEFAULT_ZJERK                  0.5
-#define DEFAULT_EJERK                 20.0
+#define DEFAULT_EJERK                  20.0
+
 
 //===========================================================================
 //============================= Z Probe Options =============================
@@ -560,7 +561,7 @@
  * Probe Type
  *
  * Allen Key Probes, Servo Probes, Z-Sled Probes, FIX_MOUNTED_PROBE, etc.
- * Activate one of these to use Auto Bed Leveling below.
+ * You must activate one of these to use Auto Bed Leveling below.
  */
 
 /**
@@ -979,12 +980,12 @@
 
 // Preheat Constants
 #define PREHEAT_1_TEMP_HOTEND 210
-#define PREHEAT_1_TEMP_BED      0
-#define PREHEAT_1_FAN_SPEED   165 // Value from 0 to 255
+#define PREHEAT_1_TEMP_BED     0
+#define PREHEAT_1_FAN_SPEED     165// Value from 0 to 255
 
 #define PREHEAT_2_TEMP_HOTEND 245
-#define PREHEAT_2_TEMP_BED      0
-#define PREHEAT_2_FAN_SPEED   165 // Value from 0 to 255
+#define PREHEAT_2_TEMP_BED    0
+#define PREHEAT_2_FAN_SPEED     165// Value from 0 to 255
 
 /**
  * Nozzle Park -- EXPERIMENTAL
@@ -1149,7 +1150,7 @@
  * IMPORTANT: The U8glib library is required for Full Graphic Display!
  *            https://github.com/olikraus/U8glib_Arduino
  */
-#define ULTRA_LCD   // Character based
+#define ULTRA_LCD     // Character based
 //#define DOGLCD      // Full graphics display
 
 /**

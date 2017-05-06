@@ -1,0 +1,30 @@
+[
+  {
+    "name": "E0_AUTO_FAN_PIN",
+    "disabled": true
+  },
+  {
+    "name": "DIGIPOT_I2C",
+    "disabled": false
+  },
+  {
+    "name": "DIGIPOT_MCP4018",
+    "disabled": false
+  },
+  {
+    "name": "DIGIPOT_I2C_NUM_CHANNELS",
+    "value": "5"
+  },
+  {
+    "name": "DIGIPOT_I2C_MOTOR_CURRENTS",
+    "value": "{0.68, 0.68, 1.18, 1.27, 1.27}"
+  },
+  {
+    "name": "LCD_INFO_MENU",
+    "disabled": false
+  },
+  {
+    "name": "FILAMENT_CHANGE_LOAD_FEEDRATE",
+    "value": "10"
+  }
+]

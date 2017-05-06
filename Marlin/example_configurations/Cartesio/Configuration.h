@@ -58,8 +58,8 @@
 //===========================================================================
 //============================= DELTA Printer ===============================
 //===========================================================================
-// For Delta printers start with one of the configuration files in the
-// example_configurations/delta directory and customize for your machine.
+// For a Delta printer replace the configuration files with the files in the
+// example_configurations/delta directory.
 //
 
 //===========================================================================
@@ -74,7 +74,7 @@
 // User-specified version info of this build to display in [Pronterface, etc] terminal window during
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
-#define STRING_CONFIG_H_AUTHOR "(MaukCC, CartesioE)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(MaukCC, CartesioE)"    // Who made the changes.
 #define SHOW_BOOTSCREEN
 #define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
 #define STRING_SPLASH_LINE2 WEBSITE_URL         // will be shown during bootup in line 2
@@ -118,7 +118,6 @@
 // The following define selects which electronics board you have.
 // Please choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  //#define MOTHERBOARD BOARD_CNCONTROLS_11
   #define MOTHERBOARD BOARD_CNCONTROLS_12
 #endif
 
@@ -279,6 +278,7 @@
 #define HEATER_1_MAXTEMP 415
 #define HEATER_2_MAXTEMP 415
 #define HEATER_3_MAXTEMP 415
+#define HEATER_4_MAXTEMP 275
 #define BED_MAXTEMP 165
 
 //===========================================================================
@@ -302,21 +302,20 @@
   #define K1 0.95 //smoothing factor within the PID
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
+  // Ultimaker
+  #define  DEFAULT_Kp 18
+  #define  DEFAULT_Ki 1
+  #define  DEFAULT_Kd 100
 
-    // Cartesio extruderV6 40W Normal
-    #define  DEFAULT_Kp 18
-    #define  DEFAULT_Ki 1
-    #define  DEFAULT_Kd 100
+  // MakerGear
+  //#define  DEFAULT_Kp 50
+  //#define  DEFAULT_Ki 9
+  //#define  DEFAULT_Kd 70
 
-    // Cartesio extruderV6 40W Volcano
-    //#define  DEFAULT_Kp 50
-    //#define  DEFAULT_Ki 9
-    //#define  DEFAULT_Kd 70
-
-    // Cartesio extruderV6 40W Cyclops
-    //#define  DEFAULT_Kp 18
-    //#define  DEFAULT_Ki 1
-    //#define  DEFAULT_Kd 100
+  // Mendel Parts V9 on 12V
+  //#define  DEFAULT_Kp 18
+  //#define  DEFAULT_Ki 1
+  //#define  DEFAULT_Kd 100
 
 #endif // PIDTEMP
 
@@ -346,15 +345,17 @@
 
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
-    //24V 500W silicone heater on to 4mm glass CartesioW
-    #define  DEFAULT_bedKp 390
-    #define  DEFAULT_bedKi 70
-    #define  DEFAULT_bedKd 546
+  //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
+  //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
+  #define  DEFAULT_bedKp 390
+  #define  DEFAULT_bedKi 70
+  #define  DEFAULT_bedKd 546
 
-    //24V 250W silicone heater on to 4mm glass CartesioM
-    //#define  DEFAULT_bedKp 303
-    //#define  DEFAULT_bedKi 42
-    //#define  DEFAULT_bedKd 539
+  //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
+  //from pidautotune
+  //#define  DEFAULT_bedKp 303
+  //#define  DEFAULT_bedKi 42
+  //#define  DEFAULT_bedKd 539
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -444,7 +445,7 @@
 #define X_MAX_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
 #define Y_MAX_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
 #define Z_MAX_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
-#define Z_MIN_PROBE_ENDSTOP_INVERTING true // set to true to invert the logic of the probe.
+#define Z_MIN_PROBE_ENDSTOP_INVERTING true  // set to true to invert the logic of the probe.
 
 // Enable this feature if all enabled endstop pins are interrupt-capable.
 // This will remove the need to poll the interrupt pins, saving many CPU cycles.
@@ -517,6 +518,7 @@
 #define DEFAULT_ZJERK                  0.4
 #define DEFAULT_EJERK                  5.0
 
+
 //===========================================================================
 //============================= Z Probe Options =============================
 //===========================================================================
@@ -559,7 +561,7 @@
  * Probe Type
  *
  * Allen Key Probes, Servo Probes, Z-Sled Probes, FIX_MOUNTED_PROBE, etc.
- * Activate one of these to use Auto Bed Leveling below.
+ * You must activate one of these to use Auto Bed Leveling below.
  */
 
 /**

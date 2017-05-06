@@ -1,0 +1,174 @@
+[
+  {
+    "name": "MOTHERBOARD",
+    "value": "BOARD_OMCA"
+  },
+  {
+    "name": "POWER_SUPPLY",
+    "value": "1"
+  },
+  {
+    "name": "TEMP_SENSOR_0",
+    "value": "5"
+  },
+  {
+    "name": "TEMP_SENSOR_BED",
+    "value": "5"
+  },
+  {
+    "name": "TEMP_BED_RESIDENCY_TIME",
+    "value": "0"
+  },
+  {
+    "name": "DEFAULT_Kp",
+    "number": 0,
+    "value": "25.05"
+  },
+  {
+    "name": "DEFAULT_Ki",
+    "number": 0,
+    "value": "2.30"
+  },
+  {
+    "name": "DEFAULT_Kd",
+    "number": 0,
+    "value": "68.15"
+  },
+  {
+    "name": "X_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Y_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Z_MIN_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "X_MAX_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Y_MAX_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Z_MAX_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "Z_MIN_PROBE_ENDSTOP_INVERTING",
+    "value": "true"
+  },
+  {
+    "name": "DEFAULT_AXIS_STEPS_PER_UNIT",
+    "value": "{ 71.1, 71.1, 2560, 739.65 }",
+    "comment": "// Michel TVRR"
+  },
+  {
+    "name": "DEFAULT_AXIS_STEPS_PER_UNIT",
+    "value": "{ 71.1, 71.1, 2560, 739.65 }",
+    "comment": "// Michel TVRR"
+  },
+  {
+    "name": "DEFAULT_AXIS_STEPS_PER_UNIT",
+    "value": "{ 71.1, 71.1, 2560, 739.65 }",
+    "comment": "// Michel TVRR"
+  },
+  {
+    "name": "DEFAULT_AXIS_STEPS_PER_UNIT",
+    "value": "{ 71.1, 71.1, 2560, 739.65 }",
+    "comment": "// Michel TVRR"
+  },
+  {
+    "name": "DEFAULT_MAX_FEEDRATE",
+    "value": "{ 500, 500, 5, 45 }",
+    "comment": "// David TVRR"
+  },
+  {
+    "name": "DEFAULT_MAX_ACCELERATION",
+    "value": "{ 9000, 9000, 100, 10000 }"
+  },
+  {
+    "name": "DEFAULT_ACCELERATION",
+    "value": "500"
+  },
+  {
+    "name": "DEFAULT_TRAVEL_ACCELERATION",
+    "value": "500"
+  },
+  {
+    "name": "X_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "-25"
+  },
+  {
+    "name": "Y_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "-29"
+  },
+  {
+    "name": "Z_PROBE_OFFSET_FROM_EXTRUDER",
+    "value": "-12.35"
+  },
+  {
+    "name": "Z_CLEARANCE_DEPLOY_PROBE",
+    "value": "15"
+  },
+  {
+    "name": "X_ENABLE_ON",
+    "value": "1"
+  },
+  {
+    "name": "Y_ENABLE_ON",
+    "value": "1"
+  },
+  {
+    "name": "Z_ENABLE_ON",
+    "value": "1"
+  },
+  {
+    "name": "E_ENABLE_ON",
+    "value": "1"
+  },
+  {
+    "name": "INVERT_Y_DIR",
+    "value": "false"
+  },
+  {
+    "name": "INVERT_Z_DIR",
+    "value": "true"
+  },
+  {
+    "name": "CONFIG_STEPPERS_TOSHIBA",
+    "disabled": false
+  },
+  {
+    "name": "X_MAX_POS",
+    "value": "205"
+  },
+  {
+    "name": "Y_MAX_POS",
+    "value": "205"
+  },
+  {
+    "name": "Z_MAX_POS",
+    "value": "120"
+  },
+  {
+    "name": "PREHEAT_1_FAN_SPEED",
+    "value": "255"
+  },
+  {
+    "name": "PREHEAT_2_TEMP_BED",
+    "value": "100"
+  },
+  {
+    "name": "PREHEAT_2_FAN_SPEED",
+    "value": "255"
+  },
+  {
+    "name": "LCD_LANGUAGE",
+    "disabled": true
+  }
+]

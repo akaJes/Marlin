@@ -1,0 +1,47 @@
+[
+  {
+    "name": "THERMAL_PROTECTION_PERIOD",
+    "value": "50"
+  },
+  {
+    "name": "THERMAL_PROTECTION_HYSTERESIS",
+    "value": "3"
+  },
+  {
+    "name": "WATCH_TEMP_PERIOD",
+    "value": "50"
+  },
+  {
+    "name": "THERMAL_PROTECTION_BED_PERIOD",
+    "value": "50"
+  },
+  {
+    "name": "DEFAULT_STEPPER_DEACTIVE_TIME",
+    "value": "0",
+    "comment": "// usually set to 120 seconds"
+  },
+  {
+    "name": "BABYSTEPPING",
+    "disabled": false
+  },
+  {
+    "name": "DOUBLECLICK_FOR_Z_BABYSTEPPING",
+    "disabled": false
+  },
+  {
+    "name": "TX_BUFFER_SIZE",
+    "value": "32"
+  },
+  {
+    "name": "FILAMENT_CHANGE_FEATURE",
+    "disabled": false
+  },
+  {
+    "name": "PARK_HEAD_ON_PAUSE",
+    "disabled": false
+  },
+  {
+    "name": "NO_WORKSPACE_OFFSETS",
+    "disabled": false
+  }
+]

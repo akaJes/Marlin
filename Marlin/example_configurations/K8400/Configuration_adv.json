@@ -1,0 +1,67 @@
+[
+  {
+    "name": "BED_CHECK_INTERVAL",
+    "value": "1000"
+  },
+  {
+    "name": "BED_HYSTERESIS",
+    "value": "1"
+  },
+  {
+    "name": "USE_CONTROLLER_FAN",
+    "disabled": false
+  },
+  {
+    "name": "CONTROLLER_FAN_PIN",
+    "disabled": false,
+    "value": "2"
+  },
+  {
+    "name": "Z_DUAL_ENDSTOPS_ADJUSTMENT",
+    "comment": "// use M666 command to determine this value"
+  },
+  {
+    "name": "X_HOME_BUMP_MM",
+    "value": "10"
+  },
+  {
+    "name": "Y_HOME_BUMP_MM",
+    "value": "10"
+  },
+  {
+    "name": "Z_HOME_BUMP_MM",
+    "value": "3"
+  },
+  {
+    "name": "QUICK_HOME",
+    "disabled": false
+  },
+  {
+    "name": "BUFSIZE",
+    "value": "26"
+  },
+  {
+    "name": "FILAMENT_CHANGE_X_POS",
+    "value": "100"
+  },
+  {
+    "name": "FILAMENT_CHANGE_Y_POS",
+    "value": "100"
+  },
+  {
+    "name": "FILAMENT_CHANGE_Z_ADD",
+    "value": "20"
+  },
+  {
+    "name": "FILAMENT_CHANGE_RETRACT_LENGTH",
+    "value": "5"
+  },
+  {
+    "name": "FILAMENT_CHANGE_UNLOAD_LENGTH",
+    "value": "600"
+  },
+  {
+    "name": "FILAMENT_CHANGE_EXTRUDE_LENGTH",
+    "value": "100"
+  }
+]

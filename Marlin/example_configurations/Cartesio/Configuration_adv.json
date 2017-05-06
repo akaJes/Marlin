@@ -1,0 +1,46 @@
+[
+  {
+    "name": "TEMP_SENSOR_AD595_OFFSET",
+    "value": "3.0"
+  },
+  {
+    "name": "TEMP_SENSOR_AD595_GAIN",
+    "value": "2.0"
+  },
+  {
+    "name": "E0_AUTO_FAN_PIN",
+    "disabled": true
+  },
+  {
+    "name": "E1_AUTO_FAN_PIN",
+    "disabled": true
+  },
+  {
+    "name": "EXTRUDER_AUTO_FAN_TEMPERATURE",
+    "value": "35"
+  },
+  {
+    "name": "Z_DUAL_ENDSTOPS_ADJUSTMENT",
+    "comment": "// use M666 command to determine this value"
+  },
+  {
+    "name": "HOME_Y_BEFORE_X",
+    "disabled": false
+  },
+  {
+    "name": "FILAMENT_CHANGE_X_POS",
+    "value": "30"
+  },
+  {
+    "name": "FILAMENT_CHANGE_Y_POS",
+    "value": "10"
+  },
+  {
+    "name": "FILAMENT_CHANGE_RETRACT_LENGTH",
+    "value": "1"
+  },
+  {
+    "name": "FILAMENT_CHANGE_UNLOAD_LENGTH",
+    "disabled": true
+  }
+]

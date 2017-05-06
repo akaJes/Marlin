@@ -39,22 +39,6 @@
 #define CONFIGURATION_H
 #define CONFIGURATION_H_VERSION 010100
 
-/**
- * Sample configuration file for TinyBoy2 L10/L16
- *
- * Compile from Arduino or using make:
- *
- * ARDUINO_INSTALL_DIR=/usr/share/java/Arduino-1.6.13/ \
- *   HARDWARE_MOTHERBOARD=66 \
- *   PATH=/usr/avr/bin/:$PATH make
- *
- * Please choose your hardware options for the TinyBoy2:
- */
-
-#define TB2_L10
-//#define TB2_L16
-#define TB2_HEATBED_MOD
-
 //===========================================================================
 //============================= Getting Started =============================
 //===========================================================================
@@ -74,8 +58,8 @@
 //===========================================================================
 //============================= DELTA Printer ===============================
 //===========================================================================
-// For Delta printers start with one of the configuration files in the
-// example_configurations/delta directory and customize for your machine.
+// For a Delta printer replace the configuration files with the files in the
+// example_configurations/delta directory.
 //
 
 //===========================================================================
@@ -90,7 +74,7 @@
 // User-specified version info of this build to display in [Pronterface, etc] terminal window during
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
-#define STRING_CONFIG_H_AUTHOR "(StefanB, default config)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(StefanB, default config)"// Who made the changes.
 #define SHOW_BOOTSCREEN
 #define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
 #define STRING_SPLASH_LINE2 WEBSITE_URL         // will be shown during bootup in line 2
@@ -139,13 +123,7 @@
 
 // Optional custom name for your RepStrap or other custom machine
 // Displayed in the LCD "Ready" message
-#if ENABLED(TB2_L10)
-  #define CUSTOM_MACHINE_NAME "TinyBoy2 L10"
-#elif ENABLED(TB2_L16)
-  #define CUSTOM_MACHINE_NAME "TinyBoy2 L16"
-#else
-  #error "Please select TB2_L10 or TB2_L16"
-#endif
+//#define CUSTOM_MACHINE_NAME "TinyBoy2 L16"
 
 // Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
 // You can use an online service to generate a random UUID. (eg http://www.uuidgenerator.net/version4)
@@ -262,12 +240,7 @@
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
 #define TEMP_SENSOR_4 0
-#if ENABLED(TB2_HEATBED_MOD)
-  // K8200 Heatbed 1206/100k/3950K spare part
-  #define TEMP_SENSOR_BED 7
-#else
-  #define TEMP_SENSOR_BED 0
-#endif
+#define TEMP_SENSOR_BED 0
 
 // Dummy thermistor constant temperature readings, for use with 998 and 999
 #define DUMMY_THERMISTOR_998_VALUE 25
@@ -340,20 +313,10 @@
   //#define  DEFAULT_Kd 12
 
   // Mendel Parts V9 on 12V
-  //#define  DEFAULT_Kp 63.0
-  //#define  DEFAULT_Ki 2.25
-  //#define  DEFAULT_Kd 440
-
-  // TinyBoy2 Extruder - calculated with PID Autotune and tested
-  // "M303 E0 C8 S200"
-  //#define  DEFAULT_Kp 25.63
-  //#define  DEFAULT_Ki 2.66
-  //#define  DEFAULT_Kd 61.73
-
-  // TinyBoy2 Extruder - same, but with fan @ 25% duty
   #define  DEFAULT_Kp 26.15
   #define  DEFAULT_Ki 2.71
   #define  DEFAULT_Kd 63.02
+
 #endif // PIDTEMP
 
 //===========================================================================
@@ -390,24 +353,11 @@
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
-  //#define  DEFAULT_bedKp 97.1
-  //#define  DEFAULT_bedKi 1.41
-  //#define  DEFAULT_bedKd 1675.16
-
-  // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
-
-  // TinyBoy2 heatbed - calculated with PID Autotune and tested
-  // "M303 E-1 C8 S75"
-  //#define  DEFAULT_bedKp 421.80
-  //#define  DEFAULT_bedKi 82.51
-  //#define  DEFAULT_bedKd 539.06
-
-  // TinyBoy2 heatbed - same, but with fan @ 25% duty
-  // "M303 E-1 C8 S75"
   #define  DEFAULT_bedKp 267.54
   #define  DEFAULT_bedKi 52.34
   #define  DEFAULT_bedKd 341.92
 
+  // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
 
 // @section extruder
@@ -467,7 +417,6 @@
 // Specify here all the endstop connectors that are connected to any endstop or probe.
 // Almost all printers will be using one per axis. Probes will use one or more of the
 // extra connectors. Leave undefined any used for non-endstop and non-probe purposes.
-// TB2 has X endstop on max, see also INVERT_X_DIR and X_HOME_DIR
 //#define USE_XMIN_PLUG
 #define USE_YMIN_PLUG
 #define USE_ZMIN_PLUG
@@ -491,9 +440,9 @@
 
 // Mechanical endstop with COM to ground and NC to Signal uses "false" here (most common setup).
 #define X_MIN_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
-#define Y_MIN_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
-#define Z_MIN_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
-#define X_MAX_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
+#define Y_MIN_ENDSTOP_INVERTING true  // set to true to invert the logic of the endstop.
+#define Z_MIN_ENDSTOP_INVERTING true  // set to true to invert the logic of the endstop.
+#define X_MAX_ENDSTOP_INVERTING true  // set to true to invert the logic of the endstop.
 #define Y_MAX_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
 #define Z_MAX_ENDSTOP_INVERTING false // set to true to invert the logic of the endstop.
 #define Z_MIN_PROBE_ENDSTOP_INVERTING false // set to true to invert the logic of the probe.
@@ -569,6 +518,7 @@
 #define DEFAULT_ZJERK                  0.4
 #define DEFAULT_EJERK                  5.0
 
+
 //===========================================================================
 //============================= Z Probe Options =============================
 //===========================================================================
@@ -611,7 +561,7 @@
  * Probe Type
  *
  * Allen Key Probes, Servo Probes, Z-Sled Probes, FIX_MOUNTED_PROBE, etc.
- * Activate one of these to use Auto Bed Leveling below.
+ * You must activate one of these to use Auto Bed Leveling below.
  */
 
 /**
@@ -739,7 +689,7 @@
 #define INVERT_Y_DIR false
 #define INVERT_Z_DIR false
 
-// Enable this option for Toshiba steppers
+// Enable this option for Toshiba stepper drivers
 //#define CONFIG_STEPPERS_TOSHIBA
 
 // @section extruder
@@ -768,14 +718,9 @@
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-// Tinyboy2: 100mm are marketed, actual length between endstop and end of rail is 98mm
 #define X_MAX_POS 98
 #define Y_MAX_POS 98
-#if ENABLED(TB2_L10)
-  #define Z_MAX_POS 98
-#else
-  #define Z_MAX_POS 158
-#endif
+#define Z_MAX_POS 158
 
 // If enabled, axes won't move below MIN_POS in response to movement commands.
 #define MIN_SOFTWARE_ENDSTOPS
@@ -1039,7 +984,7 @@
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
 #define PREHEAT_2_TEMP_HOTEND 240
-#define PREHEAT_2_TEMP_BED     90 // TB2: ABS default 110, 90 is the maximum temp at 12V supply
+#define PREHEAT_2_TEMP_BED    90
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
 /**

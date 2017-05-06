@@ -1,0 +1,34 @@
+[
+  {
+    "name": "THERMAL_PROTECTION_HYSTERESIS",
+    "value": "2"
+  },
+  {
+    "name": "WATCH_TEMP_PERIOD",
+    "value": "40"
+  },
+  {
+    "name": "THERMAL_PROTECTION_BED_PERIOD",
+    "value": "40"
+  },
+  {
+    "name": "BABYSTEPPING",
+    "disabled": false
+  },
+  {
+    "name": "BABYSTEP_MULTIPLICATOR",
+    "value": "2"
+  },
+  {
+    "name": "DOUBLECLICK_FOR_Z_BABYSTEPPING",
+    "disabled": false
+  },
+  {
+    "name": "FILAMENT_CHANGE_FEATURE",
+    "disabled": false
+  },
+  {
+    "name": "PINS_DEBUGGING",
+    "disabled": false
+  }
+]

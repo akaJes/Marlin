@@ -1,0 +1,105 @@
+[
+  {
+    "name": "EXTRUDER_RUNOUT_PREVENT",
+    "disabled": false
+  },
+  {
+    "name": "E0_AUTO_FAN_PIN",
+    "disabled": true
+  },
+  {
+    "name": "E1_AUTO_FAN_PIN",
+    "disabled": true
+  },
+  {
+    "name": "Z_DUAL_ENDSTOPS_ADJUSTMENT",
+    "comment": "// use M666 command to determine this value"
+  },
+  {
+    "name": "QUICK_HOME",
+    "disabled": false
+  },
+  {
+    "name": "HOME_Y_BEFORE_X",
+    "disabled": false
+  },
+  {
+    "name": "ULTIPANEL_FEEDMULTIPLY",
+    "disabled": true
+  },
+  {
+    "name": "DIGIPOT_MOTOR_CURRENT",
+    "disabled": false,
+    "value": "{150, 170, 180, 190, 180}",
+    "comment": "// Values 0-255 (bq ZUM Mega 3D (default): X = 150 [~1.17A]; Y = 170 [~1.33A]; Z = 180 [~1.41A]; E0 = 190 [~1.49A])"
+  },
+  {
+    "name": "ENCODER_RATE_MULTIPLIER",
+    "disabled": true
+  },
+  {
+    "name": "ENCODER_10X_STEPS_PER_SEC",
+    "disabled": true
+  },
+  {
+    "name": "ENCODER_100X_STEPS_PER_SEC",
+    "disabled": true
+  },
+  {
+    "name": "CHDK_DELAY",
+    "disabled": true
+  },
+  {
+    "name": "LCD_INFO_MENU",
+    "disabled": false
+  },
+  {
+    "name": "LCD_DECIMAL_SMALL_XY",
+    "disabled": false
+  },
+  {
+    "name": "SD_FINISHED_RELEASECOMMAND",
+    "value": "\"M104 S0\\nM84 X Y Z E\""
+  },
+  {
+    "name": "LONG_FILENAME_HOST_SUPPORT",
+    "disabled": false
+  },
+  {
+    "name": "USE_BIG_EDIT_FONT",
+    "disabled": false
+  },
+  {
+    "name": "USE_SMALL_INFOFONT",
+    "disabled": false
+  },
+  {
+    "name": "BLOCK_BUFFER_SIZE",
+    "number": 0,
+    "value": "32"
+  },
+  {
+    "name": "BLOCK_BUFFER_SIZE",
+    "number": 1,
+    "value": "64"
+  },
+  {
+    "name": "TX_BUFFER_SIZE",
+    "value": "32"
+  },
+  {
+    "name": "E3_MICROSTEPS",
+    "number": 2,
+    "disabled": false
+  },
+  {
+    "name": "E3_MICROSTEPS",
+    "number": 2,
+    "disabled": false
+  },
+  {
+    "name": "E4_MICROSTEPS",
+    "number": 1,
+    "disabled": false
+  }
+]
