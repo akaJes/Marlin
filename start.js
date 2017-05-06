@@ -57,7 +57,6 @@ var addNumber=a=>{
 }
 
 var setConfig=(target,file)=>a=>{
-// console.log(file)
   var map=remap(a);
   return target.then(t=>{
     var undef=[];
@@ -67,20 +66,18 @@ var setConfig=(target,file)=>a=>{
         return;
       }
       var num=i.number&&i.number<map[i.name].length?i.number:0,o=map[i.name][num];
-//      if (num) console.log(i.name)
       if (o){
         var changed={};
         if ( changed.enable = o.disabled != i.disabled )
           o.disabled = i.disabled;
         if ( i.value  != undefined || o.value  != undefined )
-          if ( changed.value = (o.value||'').trim() != (i.value||'').trim() )
+          if ( changed.value = (o.value || '').trim() != (i.value || '').trim() )
             o.value = i.value;
         if ( i.comment != undefined || o.comment != undefined )
           if ( changed.comment = ( o.comment || '' ).trim() != ( i.comment || '' ).trim() )
-            o.value=i.value;
-        if ( changed.enable || changed.value || changed.comment ){
+            o.comment = i.comment;
+        if ( changed.enable || changed.value || changed.comment )
           o.changed=changed;
-        }
       }
       return o;
     }).filter(i=>i)
@@ -127,16 +124,16 @@ var loadConfig=a=>target=>{
       if (o){
         var o=o[i.number||0]||o[o.length-1];
         if (o){
-          var changed={};
-          if (changed.enable = o.disabled != undefined)
-            i.disabled=o.disabled;
-          if (changed.value = o.value != undefined)
-            i.value=o.value;
-          if (changed.comment = o.comment != undefined)
-            i.comment=o.comment;
+          var changed = {};
+          if( changed.enable = o.disabled != undefined )
+            i.disabled = o.disabled;
+          if( changed.value = o.value != undefined )
+            i.value = o.value;
+          if( changed.comment = o.comment != undefined )
+            i.comment = o.comment;
           if (o.nubmer != undefined)
             i.nubmer = o.nubmer
-          i.changed=changed;
+          i.changed = changed;
         }
       }
       return i;
