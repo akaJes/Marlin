@@ -61,11 +61,13 @@ var setConfig=(target,file)=>a=>{
   return target.then(t=>{
     var undef=[];
     var res=t.map(i=>{
-      if (!map[i.name]){
+      var o=map[i.name];
+      if (!o){
         undef.push(i.line);
         return;
       }
-      var num=i.number&&i.number<map[i.name].length?i.number:0,o=map[i.name][num];
+//      var num=i.number&&i.number<map[i.name].length?i.number:0,
+      var o=o[Math.min(i.number||0,o.length-1)];
       if (o){
         var changed={};
         if ( changed.enable = o.disabled != i.disabled )
@@ -76,8 +78,11 @@ var setConfig=(target,file)=>a=>{
         if ( i.comment != undefined || o.comment != undefined )
           if ( changed.comment = ( o.comment || '' ).trim() != ( i.comment || '' ).trim() )
             o.comment = i.comment;
-        if ( changed.enable || changed.value || changed.comment )
+        if ( changed.enable || changed.value || changed.comment ){
           o.changed=changed;
+//          if ( i.number != undefined )
+//            o.number = i.number;
+        }
       }
       return o;
     }).filter(i=>i)
@@ -122,7 +127,7 @@ var loadConfig=a=>target=>{
   return a.then((cfg,map)=>(map=remapNum(cfg),target.map(i=>{
       var o=map[i.name]
       if (o){
-        var o=o[i.number||0]||o[o.length-1];
+        var o=o[i.number||0];//||o[o.length-1];
         if (o){
           var changed = {};
           if( changed.enable = o.disabled != undefined )
@@ -154,11 +159,11 @@ Object.prototype.filter = function( predicate, obj ) {
     return result;
 };
 
-
-if(1)
+var doJson=a=>
 walk('./Marlin/example_configurations').then(function(result){
 //console.log(result);
   result=result.filter(a=>/Configuration(_adv)?\.h/.test(a))
+//  result=result.filter(a=>/2020/.test(a))
   var all=[];
   result
   //.splice(0,1)
@@ -167,27 +172,30 @@ walk('./Marlin/example_configurations').then(function(result){
     var conf = inFile(file).then(mc.h2json);
     var base = inFile(path.join('./Marlin',p.base)).then(mc.h2json);
     var over=base
+    .then(addNumber)
     .then(setConfig(conf.then(addNumber),file))
     .then(onlyChanged)
-    .then(addNumber)
+//    .then(addNumber)
     .then(stripConf)
     .then(toJson)
     .then(outFile(path.join(p.dir,p.name+'.json')))
-    .then(a=>console.log('done: ',file))
-    .catch(a=>console.log('fail: ',file,a))
+    .then(a=>console.log('done json: ',file))
+    .catch(a=>console.log('fail json: ',file,a))
     all.push(over);
   })
   return Promise.all(all);
 })
-.then(a=>console.log('done ALL json'))
-.then(ob=>walk('./Marlin/example_configurations')).then(function(result){
+.then(a=>(console.log('done ALL json'),a))
+
+var doH=a=>
+walk('./Marlin/example_configurations').then(function(result){
   var all=[];
   result=result.filter(a=>/Configuration(_adv)?\.json/.test(a))
+//  result=result.filter(a=>/2020/.test(a))
   result
 //  .splice(0,1)
   .forEach(function(file){
     var p=path.parse(file);
-//    var base = inFile(baseName).then(mc.h2json);
     var baseName=path.join('./Marlin',p.name+'.h');
     var base = inFile(baseName).then(mc.h2json);
     var over = base
@@ -197,14 +205,17 @@ walk('./Marlin/example_configurations').then(function(result){
     .then(extendFrom(baseName))
     .then(array2text)
     .then(outFile(path.join(p.dir,p.name+'.h')))
-    .then(a=>console.log('done: ',file))
-    .catch(a=>console.log('fail: ',file,a))
+    .then(a=>console.log('done h: ',file))
+    .catch(a=>console.log('fail h: ',file,a))
     all.push(over);
   })
   return Promise.all(all);
 })
-.then(a=>console.log('done ALL'))
+.then(a=>console.log('done ALL h'))
 
+Promise.resolve()
+.then(process.argv.indexOf('json')<0?1:doJson)
+.then(process.argv.indexOf('h')<0?1:doH)
 
 
 
