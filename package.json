@@ -2,11 +2,10 @@
   "name": "marlin-config",
   "version": "1.0.0",
   "description": "<img align=\"right\" src=\"../../raw/1.1.x/buildroot/share/pixmaps/logo/marlin-250.png\" />",
-  "main": "start.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "mc": "node start.js",
-    "tree": "node start.js tree json h"
+    "start": "node buildroot/mc-tool/start.js",
+    "tree": "node buildroot/mc-tool/start.js tree json h"
   },
   "repository": {
     "type": "git",
