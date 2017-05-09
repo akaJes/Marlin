@@ -12,10 +12,10 @@ var text2array=text=>text.split(/\r\n?|\n/);
 var array2text=(a,text)=>(text='',a.forEach(i=>text+=i+'\n'),text.slice(0,-1));
 
 Object.prototype.filter = function( predicate, obj ) {
-    var result = {};
+    var result = { };
     obj = obj || this
     for (var key in obj) {
-        if (obj.hasOwnProperty(key) && predicate(obj[key],key)) {
+        if( obj.hasOwnProperty(key) && predicate( obj[key], key, obj ) ) {
             result[key] = obj[key];
         }
     }
@@ -39,7 +39,7 @@ var addNumber=a=>{
   })
 }
 
-var setConfig=(target,file)=>a=>{
+var setConfig=(target,file,root)=>a=>{
   var map=remap(a);
   return target.then(t=>{
     var undef=[];
@@ -66,7 +66,7 @@ var setConfig=(target,file)=>a=>{
       return o;
     }).filter(i=>i)
     if (undef.length&&file){
-        console.log('undefined for:',file);
+        console.log('undefined for:',path.relative(root,file));
         var p=path.parse(file);
         Promise
         .resolve(array2text(undef))
@@ -106,39 +106,39 @@ var loadConfig=a=>target=>{
     })
   ))
 }
-var extendFrom=name=>ch=>inFile(name).then(text2array).then(l=>(ch.forEach(i=>l[i.id]=mc.build(i)),l))
+var extendFrom=file=>ch=>file.then(text2array).then(l=>(ch.forEach(i=>l[i.id]=mc.build(i)),l))
 
 
 
 //exports
 
-module.exports.makeJson=file=>{
+module.exports.makeJson=(root,base)=>file=>{
     var p=path.parse(file);
     var conf = inFile(file).then(mc.h2json);
-    return inFile(path.join('./Marlin',p.base))
+    var h=base?Promise.resolve(base):inFile(path.join(root||'','Marlin',p.name+'.h'));
+    return h//(base?Promise.resolve(base):inFile(path.join('./Marlin',p.base)))
     .then(mc.h2json)
     .then(addNumber)
-    .then(setConfig(conf.then(addNumber),file))
+    .then(setConfig(conf.then(addNumber),file,root))
     .then(onlyChanged)
-//    .then(addNumber)
     .then(stripConf)
     .then(toJson)
     .then(outFile(path.join(p.dir,p.name+'.json')))
-    .then(a=>console.log('done json: ',file))
+    .then(a=>console.log('done json: ',path.relative(root,file)))
     .catch(a=>console.log('fail json: ',file,a))
 }
 
-module.exports.makeH=file=>{
+module.exports.makeH=(root,base)=>file=>{
     var p=path.parse(file);
-    var baseName=path.join('./Marlin',p.name+'.h');
-    return inFile(baseName)
+    var h=base?Promise.resolve(base):inFile(path.join(root||'','Marlin',p.name+'.h'));
+    return h
     .then(mc.h2json)
     .then(addNumber)
     .then(loadConfig(inFile(file).then(parseJson)))
     .then(onlyChanged)
-    .then(extendFrom(baseName))
+    .then(extendFrom(h))
     .then(array2text)
     .then(outFile(path.join(p.dir,p.name+'.h')))
-    .then(a=>console.log('done h: ',file))
+    .then(a=>console.log('done h: ',path.relative(root,file)))
     .catch(a=>console.log('fail h: ',file,a))
 }

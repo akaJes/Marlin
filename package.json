@@ -7,6 +7,9 @@
     "start": "node buildroot/mc-tool/start.js",
     "tree": "node buildroot/mc-tool/start.js tree json h"
   },
+  "bin":{
+    "mct": "buildroot/mc-tool/mct"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MarlinFirmware/Marlin.git"
@@ -16,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/MarlinFirmware/Marlin/issues"
   },
-  "homepage": "https://github.com/MarlinFirmware/Marlin#readme"
+  "homepage": "https://github.com/MarlinFirmware/Marlin#readme",
+  "dependencies": {
+    "simple-git": "^1.72.0"
+  }
 }
